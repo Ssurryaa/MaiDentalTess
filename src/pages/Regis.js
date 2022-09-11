@@ -1,7 +1,7 @@
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 import Doctor2 from '../assets/images/Doctor2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 import React, { useState } from 'react';
 
 const Regis = () => {
@@ -57,16 +57,28 @@ const Regis = () => {
                       <form>
                         <div className="form-control w-full max-w-xs mx-auto">
                           <div>
-                          <label className="label pt-4 pb-1">
-                            <span className="label-text">Nama</span>
-                          </label>
-                          <input
-                            type="text"
-                            placeholder="Masukkan nama"
-                            autoFocus
-                            required
-                            className="input input-bordered rounded-full input-info bg-white bg-opacity-50 w-full max-w-xs"
-                          />
+                            <label className="label pt-4 pb-1">
+                              <span className="label-text">E-mail</span>
+                            </label>
+                            <input
+                              type="email"
+                              placeholder="Masukkan e-mail"
+                              autoComplete="email"
+                              autoFocus
+                              required
+                              className="input input-bordered rounded-full input-info bg-white bg-opacity-50 w-full max-w-xs"
+                            />
+                          </div>
+                          <div>
+                            <label className="label pt-4 pb-1">
+                              <span className="label-text">Nama</span>
+                            </label>
+                            <input
+                              type="text"
+                              placeholder="Masukkan nama"
+                              required
+                              className="input input-bordered rounded-full input-info bg-white bg-opacity-50 w-full max-w-xs"
+                            />
                           </div>
                           <div>
                             <label className="label pt-2 pb-1">
@@ -104,7 +116,7 @@ const Regis = () => {
                             </div>
                           </div>
                           <div>
-                            <button className="btn btn-ghost py-3 px-4 mt-6 btn-active bg-gradient-to-r from-cyan-500 to-blue-500 flex rounded-full w-full justify-center text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl">
+                            <button className="py-3 px-4 mt-6 bg-gradient-to-b from-lightblue to-darkblue flex rounded-full w-full justify-center text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
                               Masuk
                             </button>
                           </div>

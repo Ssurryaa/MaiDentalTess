@@ -2,18 +2,19 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
-import Login from './component/Login';
-import Regis from './component/Regis';
-import CariDokter from './component/CariDokter';
-import Blog from './component/Blog';
-import DetailBlog from './component/DetailBlog';
-import Navbar from './component/Navbar';
+import Navbar from './components/Navbar';
+import Beranda from './pages/Beranda';
+import CariDokter from './pages/CariDokter';
+import Blog from './pages/Blog';
+import DetailBlog from './pages/DetailBlog';
+import Login from './pages/Login';
+import Regis from './pages/Regis';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Beranda />} />
         <Route path="/cari-dokter" element={<CariDokter />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/detail-blog" element={<DetailBlog />} />

@@ -1,10 +1,10 @@
-import Navbar from './Navbar';
-import CardDoctor from './CardDoctor';
+import Navbar from '../components/Navbar';
+import CardDoctor from '../components/CardDoctor';
 
 const CariDokter = () => {
   return (
     <div>
-      <div className=" bg-sky-50">
+      <div className=" bg-background">
         <div className='blur-xxl'>
           <span className='absolute right-0'>
             <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,6 +77,7 @@ const CariDokter = () => {
                 </div>
               </div>
               <div className="w-full flex justify-center lg:w-4/5">
+                  <CardDoctor/>
                   <CardDoctor/>
               </div>
             </div>

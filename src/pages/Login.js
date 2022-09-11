@@ -1,9 +1,9 @@
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 import Doctor from '../assets/images/Doctor.png';
 import Google from '../assets/images/google.svg';
 import Facebook from '../assets/images/Facebook.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { regular} from '@fortawesome/fontawesome-svg-core/import.macro'
 import React, { useState } from 'react';
 
 
@@ -114,7 +114,7 @@ const Login = () => {
                             </div>
                           </div>
                           <div>
-                            <button className="btn btn-ghost py-3 px-4 mt-6 btn-active bg-gradient-to-r from-cyan-500 to-blue-500 flex rounded-full w-full justify-center text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl">
+                            <button className="py-3 px-4 mt-6 bg-gradient-to-b from-lightblue to-darkblue flex rounded-full w-full justify-center text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
                               Masuk
                             </button>
                           </div>
@@ -135,12 +135,12 @@ const Login = () => {
                           - atau lanjutkan dengan -
                       </p>
                       <div className="flex flex-row mx-auto">
-                        <button className='btn btn-ghost rounded-full px-0 hover:bg-white hover:shadow-xl'>
-                          <img src={Google} alt="Google" className="scale-75 mx-3" />
-                        </button>
-                        <button className='btn btn-ghost rounded-full px-0 hover:bg-white hover:shadow-xl'>
-                          <img src={Facebook} alt="Facebook" className="scale-90 mx-3" />
-                        </button>
+                        <a href='#' className='rounded-full px-0 hover:bg-white hover:shadow-xl mx-3'>
+                          <img src={Google} alt="Google" className="scale-75" />
+                        </a>
+                        <a href='#' className='rounded-full px-0 hover:bg-white hover:shadow-xl mx-3'>
+                          <img src={Facebook} alt="Facebook" className="scale-90 mx-0.5" />
+                        </a>
                       </div>
                     </div>
                   </div>

@@ -16,8 +16,24 @@ code {
     monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .loginBG {
   height: 100vh;
   background: url("./assets/images/bg/Bacground.png");
+  background-size: cover;
+}
+
+.heroBG {
+  height: 100vh;
+  background: url("./assets/images/bg/Hero.png");
+  background-size: cover;
+}
+
+.dokterBG {
+  height: 100vh;
+  background: url("./assets/images/bg/CariDokter.png");
   background-size: cover;
 }

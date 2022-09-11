@@ -24,10 +24,10 @@ const CardBlogLarge = () => {
     <div>
       {blogs.map((blog) => (
       <a href={blog.href}>
-        <div key={blog.id} className="card mx-auto card-compact lg:card-side bg-white shadow-sm mb-4 hover:opacity-80 hover:shadow-md">
+        <div key={blog.id} className="card mx-auto card-compact lg:card-side bg-white shadow-sm mb-4 transition duration-300 ease-in-out hover:shadow-lg">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/4">
-              <div className="lg:w-56 lg:h-52 mask-square ring-white">
+              <div className="h-44 lg:w-56 lg:h-52 mask-square ring-white">
               <img 
                 src={blog.imageSrc}
                 alt={blog.imageAlt} />

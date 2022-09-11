@@ -17,15 +17,33 @@ const blogs = [
     title: 'Kesehatan Gigi & Mulut - Cara Menjaga Kesehatan Mulut',
     desc: 'Dalam situasi saat ini, menjaga kebersihan pribadi sangatlah penting. Pastinya sekarang, kamu sudah terbiasa mengenakan masker dan mencuci tangan dengan seksama. Tapi jangan lupakan pentingnya menjaga kebersihan gigi...',
   },
+  {
+    id: 2,
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    author: 'Alexandra',
+    title: 'Kesehatan Gigi & Mulut - Cara Menjaga Kesehatan Mulut',
+    desc: 'Dalam situasi saat ini, menjaga kebersihan pribadi sangatlah penting. Pastinya sekarang, kamu sudah terbiasa mengenakan masker dan mencuci tangan dengan seksama. Tapi jangan lupakan pentingnya menjaga kebersihan gigi...',
+  },
+  {
+    id: 2,
+    href: '#',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    imageAlt: "Front of men's Basic Tee in black.",
+    author: 'Alexandra',
+    title: 'Kesehatan Gigi & Mulut - Cara Menjaga Kesehatan Mulut',
+    desc: 'Dalam situasi saat ini, menjaga kebersihan pribadi sangatlah penting. Pastinya sekarang, kamu sudah terbiasa mengenakan masker dan mencuci tangan dengan seksama. Tapi jangan lupakan pentingnya menjaga kebersihan gigi...',
+  },
   
 ]
 
 const CardBlogSmall = () => {
     return (
-      <div>
+      <div className='flex flex-wrap'>
         {blogs.map((blog) => (
         <a href={blog.href}>
-          <div className="card card-compact w-56 mx-auto bg-white shadow-sm mb-4 hover:opacity-80 hover:shadow-md">
+          <div className="card card-compact w-56 mx-auto bg-white shadow-sm mb-4 transition duration-300 ease-in-out hover:shadow-lg">
             <div className="w-56 h-36 mask-square ring-white">
               <img src={blog.imageSrc} alt={blog.imageAlt} />
             </div>

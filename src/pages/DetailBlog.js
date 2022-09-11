@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 
 const DetailBlog = () => {
   return (
@@ -29,7 +29,7 @@ const DetailBlog = () => {
                         <div className="w-full flex lg:w-1/2 lg:justify-end justify-center">
                             <div className='mt-4 lg:mt-0 text-black'>
                                 <div className="navbar-center hidden lg:flex">
-                                    <ul className="menu menu-horizontal p-0">
+                                    <ul className="menu menu-horizontal p-0 z-10">
                                     <li>
                                         <a>Terkini</a>
                                     </li>
