@@ -88,7 +88,7 @@ const Beranda = (props) => {
           </div>
         </section>
 
-        <section id="cari-dokter" className="px-2 lg:pt-16 lg:px-20 dokterBG">
+        <section id="cari-dokter" className="px-2 pt-12 lg:pt-16 lg:px-20 dokterBG">
           <div className="container">
           <h1 className="text-center font-semibold text-darkblue lg:text-lg pt-2">-Layanan kami.</h1>
             <div className='lg:flex lg:justify-center'>
@@ -97,30 +97,40 @@ const Beranda = (props) => {
             </div>
             <p className='mt-4'>Pilih dokter gigi yang kamu inginkan dan konsultasikan gigimu.</p>
             <div className="flex flex-wrap lg:px-24 pt-8 pb-4">
-              <CardDoctor
-                id= {"1"}
-                profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                name= {"Drg. Alex"}
-                address= {"Jl. Kenangan, Denpasar, Bali"}
-              />
-              <CardDoctor
-                id= {"1"}
-                profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                name= {"Drg. Alex"}
-                address= {"Jl. Kenangan, Denpasar, Bali"}
-              />
-              <CardDoctor
-                id= {"1"}
-                profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                name= {"Drg. Alex"}
-                address= {"Jl. Kenangan, Denpasar, Bali"}
-              />
-              <CardDoctor
-                id= {"1"}
-                profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                name= {"Drg. Alex"}
-                address= {"Jl. Kenangan, Denpasar, Bali"}
-              />
+            <div className="carousel rounded-box">
+              <div className="carousel-item mx-2 lg:mx-3">
+                <CardDoctor
+                  id= {"1"}
+                  profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                  name= {"Drg. Alex"}
+                  address= {"Jl. Kenangan, Denpasar, Bali"}
+                />
+              </div> 
+              <div className="carousel-item mx-2 lg:mx-3">
+                <CardDoctor
+                  id= {"1"}
+                  profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                  name= {"Drg. Alex"}
+                  address= {"Jl. Kenangan, Denpasar, Bali"}
+                />
+              </div> 
+              <div className="carousel-item mx-2 lg:mx-3">
+                <CardDoctor
+                  id= {"1"}
+                  profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                  name= {"Drg. Alex"}
+                  address= {"Jl. Kenangan, Denpasar, Bali"}
+                />
+              </div> 
+              <div className="carousel-item mx-2 lg:mx-3">
+                <CardDoctor
+                  id= {"1"}
+                  profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                  name= {"Drg. Alex"}
+                  address= {"Jl. Kenangan, Denpasar, Bali"}
+                />
+              </div> 
+            </div>
             </div>
             <a href="/cari-dokter" className="py-3 px-6 mt-4 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
               Selengkapnya
@@ -128,7 +138,7 @@ const Beranda = (props) => {
           </div>
         </section>
 
-        <section id="blog" className="px-2 pt-36 pb-16 lg:pt-20 lg:px-20">
+        <section id="blog" className="px-2 pt-28 pb-16 lg:pt-20 lg:px-20">
         <div className='relative w-full blur-xxl'>
             <span className='absolute right-0'>
               <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">

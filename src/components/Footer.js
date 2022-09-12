@@ -27,25 +27,21 @@ const Footer = () => {
                     </div>  
                 </div> 
                 <div className='mt-3'>
-                    <span className="footer-title">Treatment</span> 
-                    <a className="link link-hover">Branding</a> 
-                    <a className="link link-hover">Design</a> 
-                    <a className="link link-hover">Marketing</a> 
-                    <a className="link link-hover">Advertisement</a>
+                    <span className="footer-title">Layanan</span> 
+                    <a className="link link-hover">Sistem Pakar</a> 
+                    <a className="link link-hover">Cari Dokter</a>
                 </div> 
                 <div className='mt-3'>
                     <span className="footer-title">Blog</span> 
-                    <a className="link link-hover">About us</a> 
-                    <a className="link link-hover">Contact</a> 
-                    <a className="link link-hover">Jobs</a> 
-                    <a className="link link-hover">Press kit</a>
+                    <a className="link link-hover">Terkini</a> 
+                    <a className="link link-hover">Kesehatan</a> 
+                    <a className="link link-hover">Tips n Trik</a> 
+                    <a className="link link-hover">Lainnya</a>
                 </div> 
                 <div className='mt-3'>
                     <span className="footer-title">Tentang</span> 
-                    <a className="link link-hover">About us</a> 
-                    <a className="link link-hover">Contact</a> 
-                    <a className="link link-hover">Jobs</a> 
-                    <a className="link link-hover">Press kit</a>
+                    <a className="link link-hover">Mai Dental</a> 
+                    <a className="link link-hover">Kontak</a>
                 </div>
             </footer>
             <hr></hr>
