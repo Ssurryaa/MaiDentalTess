@@ -12,7 +12,7 @@ const Beranda = (props) => {
       <div>
       <div className='bg-background'>
         <Navbar/>
-        <section id="beranda" className="pt-6 lg:pt-20 px-4 lg:px-20 heroBG bg-background">
+        <section id="beranda" className="pt-6 lg:pt-20 px-4 lg:px-20 heroBG">
           <div className="container">
             <div className="w-full flex flex-wrap">
               <div className="w-full lg:w-1/2 self-start mt-20">
@@ -22,7 +22,7 @@ const Beranda = (props) => {
                   <h1 className="text-start text-4xl lg:text-6xl font-bold text-darkblue underline transition duration-300 ease-in-out hover:text-lightblue mr-2 lg:mr-4">Gigimu</h1>
                   <h1 className="text-start text-4xl lg:text-6xl font-bold text-black">Sekarang!</h1>
                 </div>
-                <p className="text-start mt-6 lg:mt-8 text-md">Gigi merupakan salah satu bagian yang sangat penting pada tubuh manusia, jika gigi Anda bermasalah (sakit gigi) maka Anda akan mengalami kesulitan berbicara, makan dan menyebabkan hari-hari Anda terganggu. Dapatkan informasi kesehatan gigi akurat langsung dari Pakarnya!</p>
+                <p className="text-start mt-6 lg:mt-8 text-md">Gigi merupakan salah satu bagian yang sangat penting pada tubuh manusia, jika gigi Anda bermasalah maka Anda akan mengalami kesulitan dan hari-hari Anda terganggu. Dapatkan informasi kesehatan gigi akurat langsung dari Pakarnya!</p>
                 <div className="flex justify-start">
                   <a href="/sistem-pakar" className="py-3 px-6 mt-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
                     Mulai Analisis
@@ -62,7 +62,7 @@ const Beranda = (props) => {
           </div>
         </section>
 
-        <section id="about" className="px-4 pt-40 lg:pt-20 lg:px-20 pb-4 bg-background">
+        <section id="about" className="px-4 pt-36 lg:pt-20 lg:px-20 pb-16">
           <div className="container">
             <div className="flex flex-wrap">
               <div className="hidden lg:w-1/2 lg:flex">
@@ -88,7 +88,7 @@ const Beranda = (props) => {
           </div>
         </section>
 
-        <section id="cari-dokter" className="px-2 pt-24 lg:pt-16 lg:px-20 dokterBG">
+        <section id="cari-dokter" className="px-2 lg:pt-16 lg:px-20 dokterBG">
           <div className="container">
           <h1 className="text-center font-semibold text-darkblue lg:text-lg pt-2">-Layanan kami.</h1>
             <div className='lg:flex lg:justify-center'>
@@ -128,7 +128,7 @@ const Beranda = (props) => {
           </div>
         </section>
 
-        <section id="blog" className="px-2 pt-56 pb-16 lg:pt-20 lg:px-20">
+        <section id="blog" className="px-2 pt-36 pb-16 lg:pt-20 lg:px-20">
         <div className='relative w-full blur-xxl'>
             <span className='absolute right-0'>
               <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +193,7 @@ const Beranda = (props) => {
                     <p className='pb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cursus enim, bibendum sit faucibus praesent in cras.</p>
                   </div>
                 </div>
-                <div className='flex justify-center lg:justify-end'>
+                <div className='flex justify-center mt-8 lg:mt-12 lg:justify-end'>
                   <a href="/blog" className=" py-3 px-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
                     Lihat Artikel Lainnya
                   </a>

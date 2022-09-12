@@ -85,7 +85,7 @@ const CardDoctor = ({id, profile, name, address}) => {
         {/* Modal Jadwal */}
         <input type="checkbox" id="chat" className="modal-toggle" />
         <label htmlFor="chat" className="modal cursor-pointer">
-          <label className="modal-box w-1/4 max-w-5xl px-0 py-0 bg-sky-50" for="">
+          <label className="modal-box relative bg-sky-50 lg:w-1/4 max-w-5xl px-0 py-0" for="">
             <label htmlFor="chat" className="text-white z-10 absolute right-4 top-5"><FontAwesomeIcon className='h-7' icon={regular('circle-xmark')} /></label>
             <div className="avatar flex justify-start items-stretch bg-gradient-to-r from-cyan-500 to-blue-500 py-3">
               <div className="w-10 rounded-full self-center ring ring-white ml-4">
