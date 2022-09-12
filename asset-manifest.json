@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/MaiDentalTess/static/css/main.4e03f085.css",
-    "main.js": "/MaiDentalTess/static/js/main.174ec971.js",
+    "main.css": "/MaiDentalTess/static/css/main.18210080.css",
+    "main.js": "/MaiDentalTess/static/js/main.0a271820.js",
     "static/js/787.633816a4.chunk.js": "/MaiDentalTess/static/js/787.633816a4.chunk.js",
+    "static/media/Doctor3.png": "/MaiDentalTess/static/media/Doctor3.66f14e2d9db527a71551.png",
     "static/media/Doctor.png": "/MaiDentalTess/static/media/Doctor.40c993843e350bdf9157.png",
+    "static/media/teeth.png": "/MaiDentalTess/static/media/teeth.930a8dbacc1c7e5935a3.png",
+    "static/media/teeth2.png": "/MaiDentalTess/static/media/teeth2.d94ba288588584e5470d.png",
     "static/media/Doctor2.png": "/MaiDentalTess/static/media/Doctor2.10d1ca3d0ca0fddbeed2.png",
     "static/media/Bacground.png": "/MaiDentalTess/static/media/Bacground.f7bc696466ae6ed96e9f.png",
+    "static/media/Hero.png": "/MaiDentalTess/static/media/Hero.9518387c48e7adfdf0d9.png",
+    "static/media/CariDokter.png": "/MaiDentalTess/static/media/CariDokter.59b9be2c97194eff2bad.png",
+    "static/media/Line.svg": "/MaiDentalTess/static/media/Line.ab3bcbfae99886a7da581aa287c2b5dc.svg",
+    "static/media/Twitter.svg": "/MaiDentalTess/static/media/Twitter.d2442c195d3f906f969808476d663c81.svg",
     "static/media/google.svg": "/MaiDentalTess/static/media/google.f02742f2bc3f5f1114a9ce595ea6ad9e.svg",
     "static/media/logo.svg": "/MaiDentalTess/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Instagram.svg": "/MaiDentalTess/static/media/Instagram.275dcd68c494408b33f3ee24fe3d19fd.svg",
     "static/media/Facebook.svg": "/MaiDentalTess/static/media/Facebook.91489b4213a3f2c3148fedc6f4456342.svg",
     "index.html": "/MaiDentalTess/index.html",
-    "main.4e03f085.css.map": "/MaiDentalTess/static/css/main.4e03f085.css.map",
-    "main.174ec971.js.map": "/MaiDentalTess/static/js/main.174ec971.js.map",
+    "main.18210080.css.map": "/MaiDentalTess/static/css/main.18210080.css.map",
+    "main.0a271820.js.map": "/MaiDentalTess/static/js/main.0a271820.js.map",
     "787.633816a4.chunk.js.map": "/MaiDentalTess/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e03f085.css",
-    "static/js/main.174ec971.js"
+    "static/css/main.18210080.css",
+    "static/js/main.0a271820.js"
   ]
 }
