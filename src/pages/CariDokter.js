@@ -77,8 +77,56 @@ const CariDokter = () => {
                 </div>
               </div>
               <div className="w-full flex justify-center lg:w-4/5">
-                  <CardDoctor/>
-                  <CardDoctor/>
+                <div className='flex flex-wrap'>
+                  <CardDoctor
+                    id= {"1"}
+                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                    name= {"Drg. Alex"}
+                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                  />
+                  <CardDoctor
+                    id= {"1"}
+                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                    name= {"Drg. Alex"}
+                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                  />
+                  <CardDoctor
+                    id= {"1"}
+                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                    name= {"Drg. Alex"}
+                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                  />
+                  <CardDoctor
+                    id= {"1"}
+                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                    name= {"Drg. Alex"}
+                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                  />
+                  <CardDoctor
+                    id= {"1"}
+                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                    name= {"Drg. Alex"}
+                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                  />
+                  <CardDoctor
+                    id= {"1"}
+                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                    name= {"Drg. Alex"}
+                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                  />
+                  <CardDoctor
+                    id= {"1"}
+                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                    name= {"Drg. Alex"}
+                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                  />
+                  <CardDoctor
+                    id= {"1"}
+                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                    name= {"Drg. Alex"}
+                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                  />
+                </div>
               </div>
             </div>
           </div>

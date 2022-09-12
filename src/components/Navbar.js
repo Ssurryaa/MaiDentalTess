@@ -5,8 +5,8 @@ import React, { useState } from 'react';
 const navigation = [
   { name: 'Beranda', href: '/', current: true },
   { name: 'Sistem Pakar', href: '#about', current: false },
-  { name: 'Cari Dokter', href: '/cari-dokter', current: false },
-  { name: 'Blog', href: '/blog', current: false },
+  { name: 'Cari Dokter', href: '#cari-dokter', current: false },
+  { name: 'Blog', href: '#blog', current: false },
 ]
 
 const Navbar = () => {

@@ -1,37 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 
-const doctors = [
-  {
-    id: '1',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU',
-    name: 'Drg. Alex',
-    address: 'Jl. Kenangan, Denpasar, Bali',
-  },
-  {
-    id: '1',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU',
-    name: 'Drg. Alex',
-    address: 'Jl. Kenangan, Denpasar, Bali',
-  },
-  {
-    id: '1',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU',
-    name: 'Drg. Alex',
-    address: 'Jl. Kenangan, Denpasar, Bali',
-  },
-  {
-    id: '1',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU',
-    name: 'Drg. Alex',
-    address: 'Jl. Kenangan, Denpasar, Bali',
-  },
-]
-const CardDoctor = () => {
+const CardDoctor = ({id, profile, name, address}) => {
     return (
-      <div className='flex flex-wrap'>
-        {doctors.map((doctor)=>(
-          <div className="card card-compact w-44 lg:w-56 bg-white shadow-sm mb-6 mx-auto transition duration-300 ease-in-out hover:shadow-xl">
+      <div className='mx-auto'>
+          <div className="card card-compact w-44 lg:w-56 bg-white shadow-sm mb-6 transition duration-300 ease-in-out hover:shadow-xl">
             <label htmlFor="detail">
               <span className='absolute left-0 mt-8 z-10'>
                 <svg width="52" height="29" viewBox="0 0 52 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,15 +22,15 @@ const CardDoctor = () => {
               </span>
               <div className="avatar justify-center py-4 pt-8">
                 <div className="w-24 lg:w-28 rounded-full ring ring-white shadow-lg shadow-sky-400/30">
-                    <img src={doctor.image} alt="doctor-image"/>
+                    <img src={profile} alt="doctor-image"/>
                 </div>
               </div>
               <div className="text-center pb-4 lg:pb-8">
                 <h1 className="text-xl text-black font-semibold px-2">
-                  {doctor.name}
+                  {name}
                 </h1>
                 <p className="text-sm pt-2 px-2">
-                  {doctor.address}
+                  {address}
                 </p>
               </div>
               <div class="grid grid-cols-2 divide-x-2 divide-white">        
@@ -74,7 +47,6 @@ const CardDoctor = () => {
               </div>
             </label>
           </div>
-        ))}
 
         {/* Modal Jadwal */}
         <input type="checkbox" id="jadwal" className="modal-toggle" />

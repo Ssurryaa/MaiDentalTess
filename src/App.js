@@ -9,12 +9,14 @@ import Blog from './pages/Blog';
 import DetailBlog from './pages/DetailBlog';
 import Login from './pages/Login';
 import Regis from './pages/Regis';
+import SistemPakar from './pages/SistemPakar';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Beranda />} />
+        <Route path="/sistem-pakar" element={<SistemPakar />} />
         <Route path="/cari-dokter" element={<CariDokter />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/detail-blog" element={<DetailBlog />} />

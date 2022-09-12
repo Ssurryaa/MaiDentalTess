@@ -70,7 +70,7 @@ const Regis = () => {
                             />
                           </div>
                           <div>
-                            <label className="label pt-4 pb-1">
+                            <label className="label pt-2 pb-1">
                               <span className="label-text">Nama</span>
                             </label>
                             <input

@@ -93,18 +93,32 @@ const DetailBlog = () => {
                     </div>
                     <hr />
                     <div>
-                    <h1 className="text-start text-2xl px-4 mt-4 mb-6 font-semibold text-black">
-                        Artikel Terpopuler
-                    </h1>
                     <div className="flex flex-wrap mt-4 pb-8">
                         <div className="w-full lg:w-3/4 px-4">
+                            <h1 className="text-start text-2xl mt-4 mb-3 font-semibold text-black">
+                                Artikel Terbaru
+                            </h1>
                             <div className='mx-auto'>
-                                <CardBlogLarge/>
+                                <CardBlogLarge
+                                    slug={"/detail-blog"} 
+                                    image={"https://images.unsplash.com/photo-1611166819595-ac34987dfa57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=515&q=80"} 
+                                    title={"Cara mudah menjaga kesehatan gigi dan mulut"} 
+                                    author={"Alexandra"} 
+                                    artikel={"Dalam situasi saat ini, menjaga kebersihan pribadi sangatlah penting. Pastinya sekarang, kamu sudah terbiasa mengenakan masker dan mencuci tangan dengan seksama. Tapi jangan lupakan pentingnya menjaga kebersihan gigi"}
+                                />
                             </div>
                         </div>
                         <div className="lg:flex lg:w-1/4 hidden">
                             <div className='mx-auto'>
-                                <CardBlogSmall/>
+                                <h1 className="text-start text-2xl mt-4 mb-3 font-semibold text-black">
+                                    Artikel Terpopuler
+                                </h1>
+                                <CardBlogSmall
+                                    slug={"/detail-blog"} 
+                                    image={"https://images.unsplash.com/photo-1611166819595-ac34987dfa57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=515&q=80"} 
+                                    title={"Cara mudah menjaga kesehatan gigi dan mulut"} 
+                                    author={"Alexandra"}
+                                />
                             </div>
                         </div>
                     </div>

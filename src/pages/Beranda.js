@@ -2,7 +2,6 @@ import Teeth from '../assets/images/teeth.png';
 import Doctor from '../assets/images/Doctor3.png';
 import Navbar from "../components/Navbar";
 import CardDoctor from '../components/CardDoctor';
-import CardBlogSmall from '../components/CardBlogSmall';
 import Footer from '../components/Footer';
 
 const Beranda = (props) => {
@@ -25,12 +24,12 @@ const Beranda = (props) => {
                 </div>
                 <p className="text-start mt-6 lg:mt-8 text-md">Gigi merupakan salah satu bagian yang sangat penting pada tubuh manusia, jika gigi Anda bermasalah (sakit gigi) maka Anda akan mengalami kesulitan berbicara, makan dan menyebabkan hari-hari Anda terganggu. Dapatkan informasi kesehatan gigi akurat langsung dari Pakarnya!</p>
                 <div className="flex justify-start">
-                  <a href="#" className="py-3 px-6 mt-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+                  <a href="/sistem-pakar" className="py-3 px-6 mt-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
                     Mulai Analisis
                   </a>
                 </div>
               </div>
-              <div className="w-full lg:w-1/2 mt-2 lg:mt-0">
+              <div className="w-full lg:w-1/2 mt-6 lg:mt-4">
                 <img src={Teeth} alt="Teeth" className='scale-90'/>
               </div>
             </div>
@@ -63,7 +62,7 @@ const Beranda = (props) => {
           </div>
         </section>
 
-        <section id="about" className="px-4 pt-40 lg:pt-20 lg:px-20 bg-background">
+        <section id="about" className="px-4 pt-40 lg:pt-20 lg:px-20 pb-4 bg-background">
           <div className="container">
             <div className="flex flex-wrap">
               <div className="hidden lg:w-1/2 lg:flex">
@@ -80,7 +79,7 @@ const Beranda = (props) => {
                 </div>
                 <p className="text-start mt-8 pr-4">Mai Dental merupakan website berbasis Sistem Pakar yang bertujuan untuk meningkatkan kesadaran masyarakat sekaligus memfasilitasi masyarakat agar dapat melakukan pemeriksaan gigi dan mulut secara rutin sesuai dengan prosedur yang ada</p>
                 <div className="flex justify-start">
-                  <a href="#" className="py-3 px-6 mt-8 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+                  <a href="/sistem-pakar" className="py-3 px-6 mt-8 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
                     Coba Sekarang!
                   </a>
                 </div>
@@ -89,81 +88,150 @@ const Beranda = (props) => {
           </div>
         </section>
 
-        <section id="cari-dokter" className="px-2 pt-24 lg:pt-12 lg:px-20 dokterBG">
+        <section id="cari-dokter" className="px-2 pt-24 lg:pt-16 lg:px-20 dokterBG">
           <div className="container">
-          <h1 className="text-center font-semibold text-darkblue lg:text-lg">-Layanan kami.</h1>
+          <h1 className="text-center font-semibold text-darkblue lg:text-lg pt-2">-Layanan kami.</h1>
             <div className='lg:flex lg:justify-center'>
               <h1 className="text-4xl lg:text-5xl font-bold text-black mr-2 lg:mr-4">Temukan Dokter</h1>
               <h1 className="text-4xl lg:text-5xl font-bold text-darkblue underline transition duration-300 ease-in-out hover:text-lightblue">Gigimu</h1>
             </div>
             <p className='mt-4'>Pilih dokter gigi yang kamu inginkan dan konsultasikan gigimu.</p>
-            <div className="lg:px-24 pt-8 pb-8">
-                <CardDoctor/>
+            <div className="flex flex-wrap lg:px-24 pt-8 pb-4">
+              <CardDoctor
+                id= {"1"}
+                profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                name= {"Drg. Alex"}
+                address= {"Jl. Kenangan, Denpasar, Bali"}
+              />
+              <CardDoctor
+                id= {"1"}
+                profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                name= {"Drg. Alex"}
+                address= {"Jl. Kenangan, Denpasar, Bali"}
+              />
+              <CardDoctor
+                id= {"1"}
+                profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                name= {"Drg. Alex"}
+                address= {"Jl. Kenangan, Denpasar, Bali"}
+              />
+              <CardDoctor
+                id= {"1"}
+                profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
+                name= {"Drg. Alex"}
+                address= {"Jl. Kenangan, Denpasar, Bali"}
+              />
             </div>
-            <a href="#" className="py-3 px-6 mt-8 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+            <a href="/cari-dokter" className="py-3 px-6 mt-4 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
               Selengkapnya
             </a>
           </div>
         </section>
 
-        <section id="artikel" className="px-2 pt-24 pb-16 lg:pt-12 lg:px-20">
+        <section id="blog" className="px-2 pt-56 pb-16 lg:pt-20 lg:px-20">
+        <div className='relative w-full blur-xxl'>
+            <span className='absolute right-0'>
+              <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="127" cy="127" r="127" fill="url(#paint0_linear_172_1152)"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_172_1152" x1="127" y1="0" x2="127" y2="254" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#85D9F8"/>
+                      <stop offset="1" stop-color="#10B2F4"/>
+                    </linearGradient>
+                  </defs>
+              </svg>
+            </span>
+          </div>
           <div className="container">
-          <h1 className="text-center font-semibold text-darkblue lg:text-lg">-Artikel.</h1>
-            <div className='lg:flex lg:justify-center'>
-              <h1 className="text-4xl lg:text-5xl font-bold text-black mr-2 lg:mr-4">Temukan Hal Menarik Seputar</h1>
-              <h1 className="text-4xl lg:text-5xl font-bold text-darkblue underline transition duration-300 ease-in-out hover:text-lightblue">Gigi</h1>
-            </div>
-            <p className='mt-4'>Kesehatan gigi dan mulut memiliki dampak yang besar untuk kesehatan tubuh secara keseluruhan.</p>
-            <div className="lg:px-24 pt-8 pb-8">
-              <div className="carousel w-full rounded-3xl">
-                <div id="slide1" className="carousel-item relative w-full">
-                  <img src="https://placeimg.com/800/200/arch" className="w-full" />
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" className="btn btn-circle">❮</a> 
-                    <a href="#slide2" className="btn btn-circle">❯</a>
+            <div className='flex flex-wrap'>
+              <div className='w-full lg:w-1/2 text-start'>
+                <h1 className="font-semibold text-darkblue lg:text-lg">-Artikel.</h1>
+                <h1 className="text-4xl lg:text-5xl font-bold text-black mr-2 lg:mr-4">Temukan Hal Menarik Seputar Gigi</h1>
+                <div className="card card-compact w-full lg:w-96 mt-8 mx-auto bg-white shadow-sm mb-4 transition duration-300 ease-in-out hover:shadow-lg">
+                  <div className="w-96 h-56 mask-square ring-white">
+                    <img src="https://placeimg.com/400/300/arch" alt="{blog.imageAlt}" />
                   </div>
-                </div> 
-                <div id="slide2" className="carousel-item relative w-full">
-                  <img src="https://placeimg.com/800/200/arch" className="w-full" />
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" className="btn btn-circle">❮</a> 
-                    <a href="#slide3" className="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" className="carousel-item relative w-full">
-                  <img src="https://placeimg.com/800/200/arch" className="w-full" />
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" className="btn btn-circle">❮</a> 
-                    <a href="#slide4" className="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" className="carousel-item relative w-full">
-                  <img src="https://placeimg.com/800/200/arch" className="w-full" />
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" className="btn btn-circle">❮</a> 
-                    <a href="#slide1" className="btn btn-circle">❯</a>
+                  <div className="card-body text-center">
+                    <p className='pt-2 text-base text-black'>2 Oktober 2022</p>
+                    <h2 className="text-3xl font-semibold text-black">Cara Menjaga Kesehatan Gigi</h2>
+                    <div className='mx-auto py-3'>
+                    <svg width="118" height="2" viewBox="0 0 118 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="118" height="2" fill="url(#paint0_linear_414_494)"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_414_494" x1="116" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#D3D3D3" stop-opacity="0"/>
+                          <stop offset="0.501157" stop-color="#D3D3D3"/>
+                          <stop offset="1" stop-color="#D3D3D3" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    </div>
+                    <p className='pb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cursus enim, bibendum sit faucibus praesent in cras.</p>
                   </div>
                 </div>
               </div>
+              <div className='w-full lg:w-1/2 lg:px-24'>
+                <div className="card card-compact w-full lg:w-96 mt-4 mx-auto bg-white shadow-sm mb-4 transition duration-300 ease-in-out hover:shadow-lg">
+                  <div className="w-full h-56 mask-square ring-white">
+                    <img src="https://placeimg.com/400/300/arch" alt="{blog.imageAlt}" />
+                  </div>
+                  <div className="card-body text-center">
+                    <p className='pt-2 text-base text-black'>2 Oktober 2022</p>
+                    <h2 className="text-3xl font-semibold text-black">Cara Menjaga Kesehatan Gigi</h2>
+                    <div className='mx-auto py-3'>
+                    <svg width="118" height="2" viewBox="0 0 118 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="118" height="2" fill="url(#paint0_linear_414_494)"/>
+                      <defs>
+                        <linearGradient id="paint0_linear_414_494" x1="116" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#D3D3D3" stop-opacity="0"/>
+                          <stop offset="0.501157" stop-color="#D3D3D3"/>
+                          <stop offset="1" stop-color="#D3D3D3" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    </div>
+                    <p className='pb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cursus enim, bibendum sit faucibus praesent in cras.</p>
+                  </div>
+                </div>
+                <div className='flex justify-center lg:justify-end'>
+                  <a href="/blog" className=" py-3 px-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+                    Lihat Artikel Lainnya
+                  </a>
+                </div>
+              </div>
             </div>
-            <a href="#" className="py-3 px-6 mt-8 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
-              Lihat Artikel Lainnya
-            </a>
           </div>
         </section>
 
-        <section id="kontak" className="px-2 py-24 lg:pt-12 lg:px-20">
+        <section id="kontak" className="px-2 pb-24 lg:pt-16 lg:px-20">
+          <div className='relative w-full blur-xxl'>
+            <span className='absolute left-0'>
+              <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="127" cy="127" r="127" fill="url(#paint0_linear_172_1152)"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_172_1152" x1="127" y1="0" x2="127" y2="254" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#85D9F8"/>
+                      <stop offset="1" stop-color="#10B2F4"/>
+                    </linearGradient>
+                  </defs>
+              </svg>
+            </span>
+          </div>
           <div className="container">
-          <h1 className="text-center font-semibold text-darkblue lg:text-lg">-Hubungi kami.</h1>
-            <h1 className="text-4xl lg:text-5xl font-bold text-black mr-2 lg:mr-4">Ada Pertanyaan, Keluhan, atau Saran?</h1>
-            <p className='mt-4'>Pesan Anda akan dijawab melalui email. Yuk jangan ragu untuk diskusi dengan kami!</p>
-            <div className="flex justify-center mt-12">
-              <form>
-                <div class="relative">
-                  <input type="text" class="input input-bordered rounded-full input-info bg-white bg-opacity-50 w-full max-w-xs pr-20" placeholder="Tuliskan pesanmu disini" required/>
-                  <button type="submit" class="absolute right-2 lg:right-2.5 bottom-1.5 px-4 py-2 text-sm rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl">Kirim</button>
-                </div>
-              </form>
+            <div className="card card-compact w-full lg:w-3/4 py-8 bg-white bg-opacity-50 shadow-md mb-6 mx-auto">
+            <div className="card-body">
+              <h1 className="text-center font-semibold text-darkblue lg:text-lg">-Hubungi kami.</h1>
+              <h1 className="text-4xl lg:text-4xl font-bold text-black mr-2 lg:mr-4">Ada Pertanyaan, Keluhan, atau Saran?</h1>
+              <p className='mt-4'>Pesan Anda akan dijawab melalui email. Yuk jangan ragu untuk diskusi dengan kami!</p>
+              <div className="mt-4">
+                <form>
+                  <div class="relative">
+                    <input type="text" class="input input-bordered rounded-full input-info bg-white bg-opacity-50 w-full max-w-xs pr-20" placeholder="Tuliskan pesanmu disini" required/>
+                    <button type="submit" class="px-8 py-2.5 mt-4 lg:mt-0 text-lg rounded-full bg-gradient-to-b from-lightblue to-darkblue text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl">Kirim</button>
+                  </div>
+                </form>
+              </div>
+            </div>
             </div>
           </div>
         </section>

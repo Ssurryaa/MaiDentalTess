@@ -47,8 +47,8 @@ const Footer = () => {
                     <a className="link link-hover">Jobs</a> 
                     <a className="link link-hover">Press kit</a>
                 </div>
-                <hr></hr>
             </footer>
+            <hr></hr>
             <div className='bg-bgfooter'>
                 <p className='text-black py-2'>©2022 Mai Dental. All rights reserved.</p>
             </div>
