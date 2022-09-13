@@ -2,6 +2,7 @@ import Doctor from '../assets/images/Doctor5.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 const Regis = () => {
   const [passwordType, setPasswordType] = useState("password");
@@ -107,7 +108,7 @@ const Regis = () => {
                               />
                               <label
                                 htmlFor="remember-me"
-                                className="ml-2 block text-sm text-gray-900"
+                                className="text-left text-sm ml-2 block text-sm text-gray-900"
                               >
                                 Saya setuju dengan semua <a className='text-sky-600 font-medium'>ketentuan layanan</a>
                               </label>
@@ -123,12 +124,12 @@ const Regis = () => {
                       <div className="flex flex-row">
                         <p className="text-center text-sm">
                           Sudah memiliki akun?
-                          <a
-                            href="/login"
+                          <Link
+                            to="/login"
                             className="px-2 font-medium text-sky-600 hover:text-sky-500"
                           >
                             Masuk
-                          </a>
+                          </Link>
                         </p>
                       </div>
                     </div>

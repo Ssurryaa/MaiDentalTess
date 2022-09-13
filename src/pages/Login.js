@@ -4,6 +4,7 @@ import Facebook from '../assets/images/Facebook.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { regular} from '@fortawesome/fontawesome-svg-core/import.macro'
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
@@ -105,7 +106,7 @@ const Login = () => {
                             <div className="text-sm">
                               <a
                                 href="#"
-                                className="text-end font-medium text-sky-600 hover:text-sky-500"
+                                className="text-end font-medium text-sm text-sky-600 hover:text-sky-500"
                               >
                                 Forgot your password?
                               </a>
@@ -121,22 +122,22 @@ const Login = () => {
                       <div className="flex flex-row">
                         <p className="text-center text-sm">
                           Belum memiliki akun?
-                          <a
-                            href="/regis"
+                          <Link
+                            to="/regis"
                             className="px-2 font-medium text-sky-600 hover:text-sky-500"
                           >
                             Register
-                          </a>
+                          </Link>
                         </p>
                       </div>
                       <p className="text-center text-sm">
                           - atau lanjutkan dengan -
                       </p>
                       <div className="flex flex-row mx-auto">
-                        <a href='#' className='mx-3 transition duration-300 ease-in-out hover:shadow-xl rounded-2xl scale-90'>
+                        <a href='#' className='mx-3 transition ease-in-out delay-300 hover:-translate-y-1 hover:scale-90 hover:shadow-xl rounded-2xl scale-75'>
                             <img src={Google} alt="Google"/>
                         </a>
-                        <a href='#' className='mx-3 transition duration-300 ease-in-out hover:shadow-xl rounded-2xl scale-90'>
+                        <a href='#' className='mx-3 transition ease-in-out delay-300 hover:-translate-y-1 hover:scale-90 hover:shadow-xl rounded-2xl scale-75'>
                             <img src={Facebook} alt="Facebook"/>
                         </a>
                       </div>

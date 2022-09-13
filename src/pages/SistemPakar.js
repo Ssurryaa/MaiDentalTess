@@ -2,13 +2,14 @@ import Teeth from '../assets/images/teeth2.png';
 import Glass from '../assets/images/glass.png';
 import ScrollTrigger from 'react-scroll-trigger';
 import { useState } from 'react';
+import Footer from '../components/Footer';
 
 const SistemPakar= () => {
     const [counterOn, setCounterOn] = useState(false);
 
     return(
         <div>
-        <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
+            <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
             <section id="sistem-pakar" className="pt-6 lg:pt-20 px-4 lg:px-20 heroBG">
                 <div className="container">
                     <div className="w-full flex flex-wrap">
@@ -39,8 +40,8 @@ const SistemPakar= () => {
                     </div>
                 </div>
             </section>
-        </ScrollTrigger>
-            <section id="diagnosa" className="pt-6 px-4 lg:pt-20 lg:px-20 bg-background">
+            </ScrollTrigger>
+            <section id="diagnosa" className="pt-6 px-4 pb-16 lg:pt-20 lg:px-20 bg-background">
                 <div className='relative w-full blur-xxl'>
                     <span className='absolute right-0'>
                     <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -176,6 +177,7 @@ const SistemPakar= () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </div>
     );
 };

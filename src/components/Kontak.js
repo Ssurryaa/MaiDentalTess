@@ -1,5 +1,6 @@
 import Button from '../components/Button';
 import Kontak from '../assets/images/kontakImage.png';
+import Torus from '../assets/images/Torus2.png';
 
 const About = () =>{
     return(
@@ -70,6 +71,9 @@ const About = () =>{
                     </div>
                   </form>
                 </div>
+              </div>
+              <div data-aos="fade-up" className="absolute -right-36 lg:right-0 top-32 lg:top-28 -z-10 aos-init aos-animate">
+                <img src={Torus} alt="Torus" className='scale-50 lg:scale-75'/>
               </div>
             </div>
           </div>

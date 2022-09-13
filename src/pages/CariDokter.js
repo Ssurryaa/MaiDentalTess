@@ -1,4 +1,5 @@
 import CardDoctor from '../components/CardDoctor';
+import Footer from '../components/Footer';
 
 const CariDokter = () => {
   return (
@@ -130,6 +131,7 @@ const CariDokter = () => {
           </div>
         </section>
       </div>
+      <Footer/>
     </div>
   );
 };
