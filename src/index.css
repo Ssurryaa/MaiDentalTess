@@ -37,10 +37,30 @@ html {
   background: url("./assets/images/bg/CariDokter.png");
   background-size: cover;
 }
-.img-hero{
-  -webkit-animation:updown 2s infinite alternate;
-            animation:updown 2s infinite alternate;
-    -webkit-transform:translateY(10px);
-        -ms-transform:translateY(10px);
-            transform:translateY(10px);
+
+.img-hero {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+}
+    50% {
+        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+}
+    100% {
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+}
 }

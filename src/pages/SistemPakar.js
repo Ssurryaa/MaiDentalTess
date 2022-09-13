@@ -1,4 +1,5 @@
-import Teeth from '../assets/images/teeth2.png';
+import Teeth from '../assets/images/teeth.png';
+import BGTeeth from '../assets/images/bgteeth.png';
 import Glass from '../assets/images/glass.png';
 import ScrollTrigger from 'react-scroll-trigger';
 import { useState } from 'react';
@@ -31,11 +32,14 @@ const SistemPakar= () => {
                         </div>
                         <div className="w-full lg:w-1/2 mt-6 lg:mt-4 ">
                             { counterOn &&
-                                <div className="absolute -right-4 lg:right-28 top-96 lg:top-16 z-10 animate__animated animate__fadeInRight">
+                                <div className="absolute -right-4 lg:right-28 top-96 lg:top-16 z-20 animate__animated animate__fadeInRight">
                                     <img src={Glass} alt="Glass" className='scale-50 lg:scale-75'/>
                                 </div>
                             }
-                            <img src={Teeth} alt="Teeth" className='scale-90 animate__animated animate__zoomIn'/>
+                            <div data-aos="fade-up" className='relative z-10 img-hero aos-init aos-animate'>
+                                <img src={Teeth} alt="HeroImage" className='absolute scale-70 lg:scale-150 right-16 lg:right-44 lg:mt-28'/>
+                            </div>
+                            <img data-aos="fade-up" src={BGTeeth} alt="BGTeeth" className='mx-auto lg:mt-12 aos-init aos-animate'/>
                         </div>
                     </div>
                 </div>
