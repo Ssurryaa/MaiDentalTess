@@ -45,6 +45,7 @@ const SistemPakar= () => {
                 </div>
             </section>
             </ScrollTrigger>
+
             <section id="diagnosa" className="pt-6 px-4 pb-16 lg:pt-20 lg:px-20 bg-background">
                 <div className='relative w-full blur-xxl'>
                     <span className='absolute right-0'>
@@ -60,7 +61,7 @@ const SistemPakar= () => {
                     </span>
                 </div>
                 <div className="container">
-                    <div data-aos="fade-up" className="w-full flex flex-wrap aos-init aos-animate">
+                    <div data-aos="fade-up" className="w-full flex flex-wrap z-20 aos-init aos-animate">
                         <div className="w-full lg:w-2/6 px-2 pt-6 lg:pt-0">
                             <div className="card w-full bg-white bg-opacity-50 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
                                 <div className="card-body">
@@ -111,7 +112,7 @@ const SistemPakar= () => {
                             </div>
                         </div>
                         <div className="flex w-full lg:w-4/6 px-2 pt-6 lg:pt-0">
-                            <div className="card card-compact w-full bg-white bg-opacity-50 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
+                            <div className="card card-compact w-full z-20 bg-white bg-opacity-50 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
                                 <div className="card-body mt-4">
                                     <h1 className="text-center text-2xl text-black font-semibold">
                                         Diagnosa Penyakit Gigi

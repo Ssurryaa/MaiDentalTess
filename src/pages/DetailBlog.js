@@ -27,37 +27,37 @@ const DetailBlog = () => {
                             <div className='mt-4 lg:mt-0 text-black'>
                                 <div className="navbar-center hidden lg:flex">
                                     <ul className="menu menu-horizontal p-0 z-10">
-                                    <li>
-                                        <a>Terkini</a>
-                                    </li>
-                                    <li>
-                                        <a>Kesehatan</a>
-                                    </li>
-                                    <li>
-                                        <a>Tips & Trik</a>
-                                    </li>
-                                    <li tabindex={0}>
-                                        <a>
-                                            Lainnya
-                                            <svg
-                                                className="fill-current"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 24 24"
-                                            >
-                                                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                                            </svg>
-                                        </a>
-                                        <ul className="p-2 bg-white text-black">
                                         <li>
-                                            <a>Gigi</a>
+                                            <a>Terkini</a>
                                         </li>
                                         <li>
-                                            <a>Submenu 2</a>
+                                            <a>Kesehatan</a>
                                         </li>
-                                        </ul>
-                                    </li>
+                                        <li>
+                                            <a>Tips & Trik</a>
+                                        </li>
+                                        <li tabindex={0}>
+                                            <a>
+                                                Lainnya
+                                                <svg
+                                                    className="fill-current"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                                </svg>
+                                            </a>
+                                            <ul className="p-2 bg-white text-black">
+                                                <li>
+                                                    <a>Gigi</a>
+                                                </li>
+                                                <li>
+                                                    <a>Submenu 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -72,17 +72,28 @@ const DetailBlog = () => {
                             </div>
                             <div className="card mx-auto w-11/12 bg-white shadow-xl mt-72 lg:px-8">
                                 <div className="card-body">
-                                    <div className="text-sm breadcrumbs mt-4">
-                                        <ul>
-                                            <li><a>Blog</a></li> 
-                                            <li><a>Kesehatan</a></li>
-                                        </ul>
+                                    <div className="flex flex-wrap">
+                                        <div className="w-4/6">
+                                            <div className="text-sm breadcrumbs mt-4">
+                                                <ul>
+                                                    <li><a>Blog</a></li> 
+                                                    <li><a>Kesehatan</a></li>
+                                                </ul>
+                                            </div>
+                                            <h2 className="card-title text-black text-left text-3xl mt-4">Kesehatan Gigi & Mulut - Cara Menjaga Kesehatan Mulut</h2>
+                                            <p className='text-left font-semibold text-slate-500'>Penulis: Johny</p>
+                                            <p className='text-left text-slate-500 mt-4 pb-8'>Dalam situasi saat ini, menjaga kebersihan pribadi sangatlah penting. Pastinya sekarang, kamu sudah terbiasa mengenakan masker dan mencuci tangan dengan seksama. Tapi jangan lupakan pentingnya menjaga kebersihan gigi dan mulut juga, lho. Berikut adalah beberapa tips tentang cara menjaga kesehatan gigi dan mulut.
+                MENGAPA KEBERSIHAN GIGI DAN MULUT ITU PENTING?
+                Mulut kita adalah titik masuk ke saluran pencernaan dan pernapasan. Mulut juga merupakan rumah bagi setidaknya 700 spesies mikroba. Ini termasuk bakteri baik dan jahat. Menyikat gigi dan flossing secara teratur dapat membantu menjaga kebersihan gigi dan mulut. Namun, tanpa kebersihan gigi dan mulut yang baik, bakteri jahat dapat menyebabkan infeksi, seperti kerusakan gigi dan penyakit gusi. Jika tidak diobati, penyakit ini dapat mempengaruhi kesehatanmu secara keseluruhan.</p>
+                                        </div>
+                                        <div className="w-2/6 mt-20 px-12">
+                                            <h1 className="text-left text-black text-xl font-semibold">Artikel Terkait</h1>
+                                            <ul className="grid justify-items-stretch">
+                                                <li><a className="link link-hover justify-self-start">Blog</a></li> 
+                                                <li><a className="link link-hover">Kesehatan</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <h2 className="card-title text-black text-left text-3xl mt-4">Kesehatan Gigi & Mulut - Cara Menjaga Kesehatan Mulut</h2>
-                                    <p className='text-left font-semibold text-slate-500'>Penulis: Johny</p>
-                                    <p className='text-left text-slate-500 mt-4 pb-8'>Dalam situasi saat ini, menjaga kebersihan pribadi sangatlah penting. Pastinya sekarang, kamu sudah terbiasa mengenakan masker dan mencuci tangan dengan seksama. Tapi jangan lupakan pentingnya menjaga kebersihan gigi dan mulut juga, lho. Berikut adalah beberapa tips tentang cara menjaga kesehatan gigi dan mulut.
-        MENGAPA KEBERSIHAN GIGI DAN MULUT ITU PENTING?
-        Mulut kita adalah titik masuk ke saluran pencernaan dan pernapasan. Mulut juga merupakan rumah bagi setidaknya 700 spesies mikroba. Ini termasuk bakteri baik dan jahat. Menyikat gigi dan flossing secara teratur dapat membantu menjaga kebersihan gigi dan mulut. Namun, tanpa kebersihan gigi dan mulut yang baik, bakteri jahat dapat menyebabkan infeksi, seperti kerusakan gigi dan penyakit gusi. Jika tidak diobati, penyakit ini dapat mempengaruhi kesehatanmu secara keseluruhan.</p>
                                 </div>
                             </div>
                         </div>

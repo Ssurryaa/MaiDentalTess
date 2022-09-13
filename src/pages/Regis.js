@@ -108,7 +108,7 @@ const Regis = () => {
                               />
                               <label
                                 htmlFor="remember-me"
-                                className="text-left text-sm ml-2 block text-sm text-gray-900"
+                                className="text-left ml-2 block text-sm text-gray-900"
                               >
                                 Saya setuju dengan semua <a className='text-sky-600 font-medium'>ketentuan layanan</a>
                               </label>
