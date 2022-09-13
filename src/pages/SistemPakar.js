@@ -1,9 +1,15 @@
 import Teeth from '../assets/images/teeth2.png';
+import Glass from '../assets/images/glass.png';
+import ScrollTrigger from 'react-scroll-trigger';
+import { useState } from 'react';
 
 const SistemPakar= () => {
+    const [counterOn, setCounterOn] = useState(false);
+
     return(
         <div>
-            <div id="sistem-pakar" className="pt-6 lg:pt-20 px-4 lg:px-20 heroBG">
+        <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
+            <section id="sistem-pakar" className="pt-6 lg:pt-20 px-4 lg:px-20 heroBG">
                 <div className="container">
                     <div className="w-full flex flex-wrap">
                         <div className="w-full lg:w-1/2 self-start mt-20">
@@ -14,19 +20,26 @@ const SistemPakar= () => {
                                 <h1 className="text-start text-4xl lg:text-6xl font-bold text-black">Sekarang!</h1>
                             </div>
                             <p className="text-start mt-6 lg:mt-8 text-md">Sistem Pakar adalah sistem informasi yang berisi pengetahuan seorang pakar sehingga dapat digunakan untuk konsultasi. Website Mai Dental merupakan website berbasis Sistem Pakar yang menggunakan algoritma Certainty Factor.</p>
-                            <div className="flex justify-start">
-                                <a href="#diagnosa" className="py-3 px-6 mt-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
-                                    Mulai Analisis
-                                </a>
-                            </div>
+                            { counterOn && 
+                                <div className="flex justify-start animate__animated animate__fadeInUp">
+                                    <a href="#diagnosa" className="py-3 px-6 mt-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+                                        Mulai Analisis
+                                    </a>
+                                </div>
+                            }
                         </div>
-                        <div className="w-full lg:w-1/2 mt-6 lg:mt-4">
-                            <img src={Teeth} alt="Teeth" className='scale-90'/>
+                        <div className="w-full lg:w-1/2 mt-6 lg:mt-4 ">
+                            { counterOn &&
+                                <div className="absolute -right-4 lg:right-28 top-96 lg:top-16 z-10 animate__animated animate__fadeInRight">
+                                    <img src={Glass} alt="Glass" className='scale-50 lg:scale-75'/>
+                                </div>
+                            }
+                            <img src={Teeth} alt="Teeth" className='scale-90 animate__animated animate__zoomIn'/>
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </section>
+        </ScrollTrigger>
             <section id="diagnosa" className="pt-6 px-4 lg:pt-20 lg:px-20 bg-background">
                 <div className='relative w-full blur-xxl'>
                     <span className='absolute right-0'>
@@ -42,7 +55,7 @@ const SistemPakar= () => {
                     </span>
                 </div>
                 <div className="container">
-                    <div className="w-full flex flex-wrap">
+                    <div data-aos="fade-up" className="w-full flex flex-wrap aos-init aos-animate">
                         <div className="w-full lg:w-2/6 px-2 pt-6 lg:pt-0">
                             <div className="card w-full bg-white bg-opacity-50 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
                                 <div className="card-body">

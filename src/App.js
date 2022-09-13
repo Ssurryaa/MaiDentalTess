@@ -1,7 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
 import './App.css';
-import { Routes, Route, Link } from "react-router-dom";
+import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Routes, Route} from "react-router-dom";
 import Navbar from './components/Navbar';
 import Beranda from './pages/Beranda';
 import CariDokter from './pages/CariDokter';
@@ -12,6 +14,9 @@ import Regis from './pages/Regis';
 import SistemPakar from './pages/SistemPakar';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="App">
       <Navbar/>
@@ -29,28 +34,4 @@ function App() {
 }
 
 export default App;
-
-function Home() {
-  return (
-    <>
-      <main>
-        <Navbar/>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </main>
-    </>
-  );
-}
 

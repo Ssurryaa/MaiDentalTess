@@ -37,3 +37,10 @@ html {
   background: url("./assets/images/bg/CariDokter.png");
   background-size: cover;
 }
+.img-hero{
+  -webkit-animation:updown 2s infinite alternate;
+            animation:updown 2s infinite alternate;
+    -webkit-transform:translateY(10px);
+        -ms-transform:translateY(10px);
+            transform:translateY(10px);
+}

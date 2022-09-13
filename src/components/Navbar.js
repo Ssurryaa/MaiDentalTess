@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const navigation = [
   { name: 'Beranda', href: '/', current: true },
-  { name: 'Sistem Pakar', href: '#about', current: false },
-  { name: 'Cari Dokter', href: '#cari-dokter', current: false },
-  { name: 'Blog', href: '#blog', current: false },
+  { name: 'Sistem Pakar', href: '/sistem-pakar', current: false },
+  { name: 'Cari Dokter', href: '/cari-dokter', current: false },
+  { name: 'Blog', href: '/blog', current: false },
 ]
 
 const Navbar = () => {
@@ -67,7 +67,7 @@ const Navbar = () => {
       <div className="navbar-end hidden lg:flex">
         <div className="mr-4">
           <Link to="/login"
-            className="rounded-full py-3 px-8 text-base font-semibold text-black transition duration-300 ease-in-out hover:opacity-80 active:bg-darkblue active:text-white hover:shadow-lg">
+            className="rounded-full py-3 px-8 text-base font-semibold text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 hover:opacity-80 active:bg-darkblue active:text-white hover:shadow-lg">
             Masuk
           </Link>
         </div>

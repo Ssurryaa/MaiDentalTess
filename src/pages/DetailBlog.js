@@ -1,5 +1,3 @@
-import Navbar from '../components/Navbar';
-
 const DetailBlog = () => {
   return (
     <div>
@@ -72,7 +70,7 @@ const DetailBlog = () => {
                                     <div className="hero-overlay bg-opacity-60"></div>
                                 </div>
                             </div>
-                            <div className="card mx-auto w-11/12 bg-white shadow-xl mt-72 px-8">
+                            <div className="card mx-auto w-11/12 bg-white shadow-xl mt-72 lg:px-8">
                                 <div className="card-body">
                                     <div className="text-sm breadcrumbs mt-4">
                                         <ul>

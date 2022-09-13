@@ -1,4 +1,3 @@
-import Navbar from '../components/Navbar';
 import CardBlogLarge from '../components/CardBlogLarge';
 import CardBlogSmall from '../components/CardBlogSmall';
 import Footer from '../components/Footer';

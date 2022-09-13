@@ -40,7 +40,7 @@ const Login = () => {
           <div className="container">
             <div className="flex flex-wrap">
               <div className="lg:mx-auto lg:w-1/2 hidden lg:flex">
-                <div className="pt-16">
+                <div className="pt-16 ">
                   <img src={Doctor} alt="DoctorImage" className="scale-125" />
                 </div>
               </div>
@@ -97,7 +97,7 @@ const Login = () => {
                               />
                               <label
                                 htmlFor="remember-me"
-                                className="ml-2 block text-sm text-gray-900"
+                                className="text-left ml-2 block text-sm text-gray-900"
                               >
                                 Remember me
                               </label>
@@ -105,7 +105,7 @@ const Login = () => {
                             <div className="text-sm">
                               <a
                                 href="#"
-                                className="font-medium text-sky-600 hover:text-sky-500"
+                                className="text-end font-medium text-sky-600 hover:text-sky-500"
                               >
                                 Forgot your password?
                               </a>
@@ -134,10 +134,10 @@ const Login = () => {
                       </p>
                       <div className="flex flex-row mx-auto">
                         <a href='#' className='mx-3 transition duration-300 ease-in-out hover:shadow-xl rounded-2xl scale-90'>
-                            <img src={Google}/>
+                            <img src={Google} alt="Google"/>
                         </a>
                         <a href='#' className='mx-3 transition duration-300 ease-in-out hover:shadow-xl rounded-2xl scale-90'>
-                            <img src={Facebook}/>
+                            <img src={Facebook} alt="Facebook"/>
                         </a>
                       </div>
                     </div>
