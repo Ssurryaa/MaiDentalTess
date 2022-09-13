@@ -14,6 +14,7 @@ import SistemPakar from './pages/SistemPakar';
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Beranda />}/>
           <Route path="sistem-pakar" element={<SistemPakar />} />

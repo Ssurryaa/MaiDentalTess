@@ -1,4 +1,3 @@
-import Navbar from '../components/Navbar';
 import CardDoctor from '../components/CardDoctor';
 
 const CariDokter = () => {
@@ -18,7 +17,6 @@ const CariDokter = () => {
             </svg>
           </span>
         </div>
-        <Navbar/>
         <section id="caridokter" className="pt-24 lg:px-20">
           <div className="container">
             <div className="flex flex-wrap">

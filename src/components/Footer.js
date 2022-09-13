@@ -28,20 +28,20 @@ const Footer = () => {
                 </div> 
                 <div className='mt-3'>
                     <span className="footer-title">Layanan</span> 
-                    <a className="link link-hover">Sistem Pakar</a> 
-                    <a className="link link-hover">Cari Dokter</a>
+                    <a className="text-left link link-hover">Sistem Pakar</a> 
+                    <a className="text-left link link-hover">Cari Dokter</a>
                 </div> 
                 <div className='mt-3'>
                     <span className="footer-title">Blog</span> 
-                    <a className="link link-hover">Terkini</a> 
-                    <a className="link link-hover">Kesehatan</a> 
-                    <a className="link link-hover">Tips n Trik</a> 
-                    <a className="link link-hover">Lainnya</a>
+                    <a className="text-left link link-hover">Terkini</a> 
+                    <a className="text-left link link-hover">Kesehatan</a> 
+                    <a className="text-left link link-hover">Tips n Trik</a> 
+                    <a className="text-left link link-hover">Lainnya</a>
                 </div> 
                 <div className='mt-3'>
                     <span className="footer-title">Tentang</span> 
-                    <a className="link link-hover">Mai Dental</a> 
-                    <a className="link link-hover">Kontak</a>
+                    <a className="text-left link link-hover">Mai Dental</a> 
+                    <a className="text-left link link-hover">Kontak</a>
                 </div>
             </footer>
             <hr></hr>

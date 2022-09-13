@@ -1,6 +1,6 @@
 import logo from '../assets/Logo.png';
 import Button from './Button';
-import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: 'Beranda', href: '/', current: true },
@@ -40,35 +40,36 @@ const Navbar = () => {
           >
             {navigation.map((item) => (
               <li>
-                <a className='active:bg-darkblue' href={item.href}>{item.name}</a>
+                <Link className='active:bg-darkblue' to={item.href}>{item.name}</Link>
               </li>
             ))}
             <li>
-              <a href="/regis" className="bg-gradient-to-b from-lightblue to-darkblue text-white">Daftar</a>
+              <Link to="/login"className='active:bg-darkblue'>Masuk</Link>
+            </li>
+            <li>
+              <Link to="/regis" className="bg-gradient-to-b from-lightblue to-darkblue text-white">Daftar</Link>
             </li>
           </ul>
         </div>
-        <a href='/'>
-          <img src={logo} alt="Logo" />
-        </a>
+          <Link to='/' className='py-auto'>
+            <img src={logo} alt="Logo" />
+          </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           {navigation.map((item) => (
             <li>
-              <a className='active:bg-darkblue mx-3' href={item.href}>{item.name}</a>
+              <Link className='active:bg-darkblue mx-3' to={item.href}>{item.name}</Link>
             </li>
           ))}
         </ul>
       </div>
       <div className="navbar-end hidden lg:flex">
         <div className="mr-4">
-          <a
-            href="/login"
-            className="rounded-full py-3 px-8 text-base font-semibold text-black transition duration-300 ease-in-out hover:opacity-80 active:bg-darkblue active:text-white hover:shadow-lg"
-          >
+          <Link to="/login"
+            className="rounded-full py-3 px-8 text-base font-semibold text-black transition duration-300 ease-in-out hover:opacity-80 active:bg-darkblue active:text-white hover:shadow-lg">
             Masuk
-          </a>
+          </Link>
         </div>
         <div>
           <Button button={buttonName} link={buttonLink}/>

@@ -1,5 +1,4 @@
-import Navbar from '../components/Navbar';
-import Doctor from '../assets/images/Doctor.png';
+import Doctor from '../assets/images/Doctor4.png';
 import Google from '../assets/images/google.svg';
 import Facebook from '../assets/images/Facebook.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -23,7 +22,7 @@ const Login = () => {
     }
   return (
     <div>
-      <div className="bg-sky-50">
+      <div className="bg-background">
         <div className='blur-xxl'>
           <span className='absolute right-0'>
             <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,12 +36,11 @@ const Login = () => {
             </svg>
           </span>
         </div>
-        <Navbar/>
         <section id="home" className="lg:pt-16 lg:px-24 loginBG">
           <div className="container">
             <div className="flex flex-wrap">
               <div className="lg:mx-auto lg:w-1/2 hidden lg:flex">
-                <div className="mt-2 pt-16">
+                <div className="pt-16">
                   <img src={Doctor} alt="DoctorImage" className="scale-125" />
                 </div>
               </div>
@@ -135,11 +133,11 @@ const Login = () => {
                           - atau lanjutkan dengan -
                       </p>
                       <div className="flex flex-row mx-auto">
-                        <a href='#' className='rounded-full px-0 hover:bg-white hover:shadow-xl mx-3'>
-                          <img src={Google} alt="Google" className="scale-75" />
+                        <a href='#' className='mx-3 transition duration-300 ease-in-out hover:shadow-xl rounded-2xl scale-90'>
+                            <img src={Google}/>
                         </a>
-                        <a href='#' className='rounded-full px-0 hover:bg-white hover:shadow-xl mx-3'>
-                          <img src={Facebook} alt="Facebook" className="scale-90 mx-0.5" />
+                        <a href='#' className='mx-3 transition duration-300 ease-in-out hover:shadow-xl rounded-2xl scale-90'>
+                            <img src={Facebook}/>
                         </a>
                       </div>
                     </div>

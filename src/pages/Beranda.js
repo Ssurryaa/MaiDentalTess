@@ -1,17 +1,13 @@
 import Teeth from '../assets/images/teeth.png';
 import Doctor from '../assets/images/Doctor3.png';
-import Navbar from "../components/Navbar";
 import CardDoctor from '../components/CardDoctor';
 import Footer from '../components/Footer';
+import { Link } from "react-router-dom";
 
 const Beranda = (props) => {
-  const buttonName = "Daftar"
-  const buttonLink ="/regis"
-
     return (
       <div>
       <div className='bg-background'>
-        <Navbar/>
         <section id="beranda" className="pt-6 lg:pt-20 px-4 lg:px-20 heroBG">
           <div className="container">
             <div className="w-full flex flex-wrap">
@@ -79,9 +75,9 @@ const Beranda = (props) => {
                 </div>
                 <p className="text-start mt-8 pr-4">Mai Dental merupakan website berbasis Sistem Pakar yang bertujuan untuk meningkatkan kesadaran masyarakat sekaligus memfasilitasi masyarakat agar dapat melakukan pemeriksaan gigi dan mulut secara rutin sesuai dengan prosedur yang ada</p>
                 <div className="flex justify-start">
-                  <a href="/sistem-pakar" className="py-3 px-6 mt-8 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+                  <Link to="/sistem-pakar" className="py-3 px-6 mt-8 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
                     Coba Sekarang!
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -132,9 +128,9 @@ const Beranda = (props) => {
               </div> 
             </div>
             </div>
-            <a href="/cari-dokter" className="py-3 px-6 mt-4 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+            <Link to="/cari-dokter" className="py-3 px-6 mt-4 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
               Selengkapnya
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -157,8 +153,8 @@ const Beranda = (props) => {
               <div className='w-full lg:w-1/2 text-start'>
                 <h1 className="font-semibold text-darkblue lg:text-lg">-Artikel.</h1>
                 <h1 className="text-4xl lg:text-5xl font-bold text-black mr-2 lg:mr-4">Temukan Hal Menarik Seputar Gigi</h1>
-                <div className="card card-compact w-full lg:w-96 mt-8 mx-auto bg-white shadow-sm mb-4 transition duration-300 ease-in-out hover:shadow-lg">
-                  <div className="w-96 h-56 mask-square ring-white">
+                <div className="card card-compact w-11/12 lg:w-96 mt-8 mx-auto bg-white shadow-sm mb-4 transition duration-300 ease-in-out hover:shadow-lg">
+                  <div className="w-full h-56 mask-square ring-white">
                     <img src="https://placeimg.com/400/300/arch" alt="{blog.imageAlt}" />
                   </div>
                   <div className="card-body text-center">
@@ -181,7 +177,7 @@ const Beranda = (props) => {
                 </div>
               </div>
               <div className='w-full lg:w-1/2 lg:px-24'>
-                <div className="card card-compact w-full lg:w-96 mt-4 mx-auto bg-white shadow-sm mb-4 transition duration-300 ease-in-out hover:shadow-lg">
+                <div className="card card-compact w-11/12 lg:w-96 mt-4 mx-auto bg-white shadow-sm mb-4 transition duration-300 ease-in-out hover:shadow-lg">
                   <div className="w-full h-56 mask-square ring-white">
                     <img src="https://placeimg.com/400/300/arch" alt="{blog.imageAlt}" />
                   </div>
@@ -204,9 +200,9 @@ const Beranda = (props) => {
                   </div>
                 </div>
                 <div className='flex justify-center mt-8 lg:mt-12 lg:justify-end'>
-                  <a href="/blog" className=" py-3 px-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+                  <Link to="/blog" className=" py-3 px-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
                     Lihat Artikel Lainnya
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

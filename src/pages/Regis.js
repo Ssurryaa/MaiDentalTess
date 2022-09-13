@@ -1,5 +1,4 @@
-import Navbar from '../components/Navbar';
-import Doctor2 from '../assets/images/Doctor2.png';
+import Doctor from '../assets/images/Doctor5.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 import React, { useState } from 'react';
@@ -21,7 +20,7 @@ const Regis = () => {
 
   return (
     <div>
-      <div className="bg-sky-50">
+      <div className="bg-background">
         <div className='blur-xxl'>
           <span className='absolute right-0'>
             <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,13 +34,12 @@ const Regis = () => {
             </svg>
           </span>
         </div>
-        <Navbar/>
-        <section id="home" class="lg:pt-16 lg:px-24 loginBG lg:h-100">
+        <section id="home" class="lg:pt-16 lg:px-24 loginBG">
           <div class="container">
             <div class="flex flex-wrap">
-              <div class="lg:mx-auto lg:w-1/2 hidden lg:flex">
-                <div className="content-center mt-5">
-                  <img src={Doctor2} alt="DoctorImage" className="scale-100" />
+              <div className="lg:mx-auto lg:w-1/2 hidden lg:flex">
+                <div className="mt-4 pt-12">
+                  <img src={Doctor} alt="DoctorImage" className="scale-125" />
                 </div>
               </div>
               <div class="w-full lg:flex lg:mx-auto px-4 lg:w-2/5">

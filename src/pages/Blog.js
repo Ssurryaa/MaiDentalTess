@@ -31,7 +31,6 @@ const DetailBlog = () => {
                     </svg>
                 </span>
             </div>
-            <Navbar/>
             <section id="blog" className="pt-24 lg:px-20">
                 <div className="container">
                     <div className="flex flex-wrap mb-6">

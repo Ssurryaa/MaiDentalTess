@@ -1,10 +1,8 @@
 import Teeth from '../assets/images/teeth2.png';
-import Navbar from "../components/Navbar";
 
 const SistemPakar= () => {
     return(
         <div>
-            <Navbar/>
             <div id="sistem-pakar" className="pt-6 lg:pt-20 px-4 lg:px-20 heroBG">
                 <div className="container">
                     <div className="w-full flex flex-wrap">
@@ -45,8 +43,8 @@ const SistemPakar= () => {
                 </div>
                 <div className="container">
                     <div className="w-full flex flex-wrap">
-                        <div className="w-full lg:w-2/6 px-3 pt-6 lg:pt-0">
-                            <div className="card w-full bg-white bg-opacity-80 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-xl">
+                        <div className="w-full lg:w-2/6 px-2 pt-6 lg:pt-0">
+                            <div className="card w-full bg-white bg-opacity-50 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
                                 <div className="card-body">
                                     <h1 className="text-center text-2xl text-black font-semibold">
                                         Data Pasien
@@ -94,9 +92,9 @@ const SistemPakar= () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex w-full lg:w-4/6 px-3 pt-6 lg:pt-0">
-                            <div className="card w-full bg-white bg-opacity-80 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-xl">
-                                <div className="card-body">
+                        <div className="flex w-full lg:w-4/6 px-2 pt-6 lg:pt-0">
+                            <div className="card card-compact w-full bg-white bg-opacity-50 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
+                                <div className="card-body mt-4">
                                     <h1 className="text-center text-2xl text-black font-semibold">
                                         Diagnosa Penyakit Gigi
                                     </h1>
@@ -108,17 +106,17 @@ const SistemPakar= () => {
                                             <table className="table table-normal w-full">
                                                 <thead>
                                                 <tr>
-                                                    <th className='bg-lightblue text-white'>No.</th>
-                                                    <th className='bg-lightblue text-white'>Pertanyaan</th>
-                                                    <th className='bg-lightblue text-center text-white'>Jawaban</th>
+                                                    <td className='bg-lightblue text-white'>No.</td>
+                                                    <td className='bg-lightblue text-white'>Pertanyaan</td>
+                                                    <td className='bg-lightblue text-center text-white'>Jawaban</td>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 <tr>
-                                                    <th className='bg-white'>1</th>
+                                                    <td className='bg-white'>1</td>
                                                     <td className='bg-white'>Apakah kamu merasakan nyeri pada gigi?</td>
                                                     <td className='text-center bg-white'>
-                                                        <select className="select select-info w-3/5 mx-5 bg-white">
+                                                        <select className="select select-info lg:w-3/5 mx-2 bg-white">
                                                             <option disabled selected>Pilih jawaban</option>
                                                             <option>Ya</option>
                                                             <option>Japanese</option>
@@ -127,10 +125,10 @@ const SistemPakar= () => {
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th className='bg-white'>1</th>
+                                                    <td className='bg-white'>1</td>
                                                     <td className='bg-white'>Apakah kamu merasakan nyeri pada gigi?</td>
                                                     <td className='text-center bg-white'>
-                                                        <select className="select select-info w-3/5 mx-5 bg-white">
+                                                        <select className="select select-info lg:w-3/5 mx-2 bg-white">
                                                             <option disabled selected>Pilih jawaban</option>
                                                             <option>Ya</option>
                                                             <option>Japanese</option>
@@ -139,10 +137,10 @@ const SistemPakar= () => {
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th className='bg-white'>1</th>
+                                                    <td className='bg-white'>1</td>
                                                     <td className='bg-white'>Apakah kamu merasakan nyeri pada gigi?</td>
                                                     <td className='text-center bg-white'>
-                                                        <select className="select select-info w-3/5 mx-5 bg-white">
+                                                        <select className="select select-info lg:w-3/5 mx-2 bg-white">
                                                             <option disabled selected>Pilih jawaban</option>
                                                             <option>Ya</option>
                                                             <option>Japanese</option>
