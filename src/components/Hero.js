@@ -41,7 +41,7 @@ const Hero = () =>{
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <div className="absolute -bottom-24 animate__animated animate__fadeInUp card card-compact w-full lg:w-4/5 z-10 bg-white bg-opacity-40 backdrop-blur-md shadow-md">
+                    <div className="absolute -bottom-24 z-30 animate__animated animate__fadeInUp card card-compact w-full lg:w-4/5 bg-white bg-opacity-40 backdrop-blur-md shadow-md">
                         <div className="py-5 grid grid-cols-4 divide-x-2 divide-slate-100">
                             <div>
                                 <h1 className='text-xl lg:text-4xl text-darkblue font-bold py-2'><CountUp start={0} end={2000} duration={2} delay={0}/>+</h1>
