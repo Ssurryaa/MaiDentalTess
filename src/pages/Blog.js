@@ -77,12 +77,12 @@ const DetailBlog = () => {
                                             <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                                         </svg>
                                     </a>
-                                    <ul className="p-2 bg-white text-black">
+                                    <ul className="p-2 bg-white text-black z-10">
                                         <li>
                                             <a className='active:bg-darkblue' href='#'>Gigi</a>
                                         </li>
                                         <li>
-                                            <a className='active:bg-darkblue' href='#'>Submenu 2</a>
+                                            <a className='active:bg-darkblue' href='#'>Penyakit</a>
                                         </li>
                                     </ul>
                                 </li>
