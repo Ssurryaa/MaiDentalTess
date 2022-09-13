@@ -72,7 +72,7 @@ const About = () =>{
                   </form>
                 </div>
               </div>
-              <div data-aos="fade-up" className="absolute -right-36 lg:right-0 top-32 lg:top-28 -z-10 aos-init aos-animate">
+              <div data-aos="fade-up" className="absolute hidden lg:flex lg:right-0 top-32 lg:top-28 -z-10 aos-init aos-animate">
                 <img src={Torus} alt="Torus" className='scale-50 lg:scale-75'/>
               </div>
             </div>
