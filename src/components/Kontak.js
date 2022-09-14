@@ -26,7 +26,7 @@ const About = () =>{
               <div className='relative hidden lg:flex'>
                 <img src={Kontak} alt="KontakImage" className='mx-4'/>
               </div>
-              <div className="card card-compact w-full lg:w-2/5 mx-4 bg-white bg-opacity-50 shadow-md aos-init aos-animate">
+              <div className="w-full lg:w-2/5 mx-4 rounded-tl-3xl rounded-br-3xl bg-white bg-opacity-50 shadow-md aos-init aos-animate">
                 <div className="card-body">
                   <form>
                     <div className="form-control w-full max-w-xs mx-auto">

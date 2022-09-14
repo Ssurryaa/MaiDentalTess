@@ -7,8 +7,8 @@ import Kontak from '../components/Kontak';
 
 const Beranda = (props) => {
     return (
-      <div>
-        <div className='bg-background'>
+      <div className='bg-background'>
+        <div>
           <Hero/>
           <About/>
           <Dokter/>

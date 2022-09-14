@@ -3,7 +3,7 @@ import Button from '../components/Button';
 
 const About = () =>{
     return(
-      <section id="about" className="px-4 pt-40 lg:pt-20 lg:px-20 pb-16">
+      <section id="about" className="px-4 pt-36 lg:pt-20 lg:px-20 pb-16">
           <div className="container">
             <div className="flex flex-wrap">
               <div className="hidden lg:w-1/2 lg:flex">

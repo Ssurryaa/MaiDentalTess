@@ -3,8 +3,8 @@ import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 const CardDoctor = ({id, profile, name, address}) => {
     return (
-      <div className='mx-auto'>
-          <div className="card card-compact w-44 lg:w-56 bg-white shadow-sm mb-6 transition duration-300 ease-in-out hover:shadow-xl">
+      <div className='mx-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300'>
+          <div className="card card-compact w-44 lg:w-56 bg-white shadow-sm mb-6 hover:shadow-lg">
             <label htmlFor="detail">
               <span className='absolute left-0 mt-8 z-10'>
                 <svg width="52" height="29" viewBox="0 0 52 29" fill="none" xmlns="http://www.w3.org/2000/svg">

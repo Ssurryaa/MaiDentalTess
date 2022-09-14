@@ -61,9 +61,9 @@ const SistemPakar= () => {
                     </span>
                 </div>
                 <div className="container">
-                    <div data-aos="fade-up" className="w-full flex flex-wrap z-20 aos-init aos-animate">
+                    <div data-aos="fade-up" className="w-full flex flex-wrap z-40 aos-init aos-animate">
                         <div className="w-full lg:w-2/6 px-2 pt-6 lg:pt-0">
-                            <div className="card w-full bg-white bg-opacity-50 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
+                            <div className="card w-full bg-white bg-opacity-50 z-30 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
                                 <div className="card-body">
                                     <h1 className="text-center text-2xl text-black font-semibold">
                                         Data Pasien
