@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 
-const CardDoctor = ({id, profile, name, address}) => {
+const CardDoctor = ({id, profile, name, address, rate}) => {
     return (
       <div className='mx-auto'>
         <div className="card card-compact w-44 lg:w-56 bg-white shadow-sm mb-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 hover:shadow-lg">
@@ -18,7 +18,7 @@ const CardDoctor = ({id, profile, name, address}) => {
               </svg>
             </span>
             <span className='absolute left-1 mt-9 z-10'>
-              <p className="font-semibold text-white text-sm"><FontAwesomeIcon icon={solid('star')} />5.0</p>
+              <p className="font-semibold text-white text-sm"><FontAwesomeIcon icon={solid('star')} />{rate}</p>
             </span>
             <div className="avatar justify-center py-4 pt-8">
               <div className="w-24 lg:w-28 rounded-full ring ring-white shadow-lg shadow-sky-400/30">
@@ -35,7 +35,7 @@ const CardDoctor = ({id, profile, name, address}) => {
                   <FontAwesomeIcon className='mr-1' icon={regular('calendar')} />Jadwal
                 </p>
               </label>
-              <label htmlFor="chat" className="flex flex-row justify-center py-2 bg-sky-200 hover:bg-sky-100 text-sm text-slate-700">
+              <label htmlFor="chat" key={id} className="flex flex-row justify-center py-2 bg-sky-200 hover:bg-sky-100 text-sm text-slate-700">
                 <p>
                   <FontAwesomeIcon className='mr-1' icon={regular('envelope')} />Chat
                 </p>
@@ -85,9 +85,9 @@ const CardDoctor = ({id, profile, name, address}) => {
             <label htmlFor="chat" className="text-white z-10 absolute right-4 top-5"><FontAwesomeIcon className='h-7' icon={regular('circle-xmark')} /></label>
             <div className="avatar flex justify-start items-stretch bg-gradient-to-r from-cyan-500 to-blue-500 py-3">
               <div className="w-10 rounded-full self-center ring ring-white ml-4">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU" alt="doctor-image"/>
+                  <img src={profile} alt="doctor-image"/>
               </div>
-              <h1 className='text-white font-semibold text-xl ml-3 self-center'>Drg. Dewi</h1>
+              <h1 className='text-white font-semibold text-xl ml-3 self-center'>{name}</h1>
             </div>
             <div className='py-44'></div>
             <form>

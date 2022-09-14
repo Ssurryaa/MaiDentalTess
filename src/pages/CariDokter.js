@@ -80,50 +80,58 @@ const CariDokter = () => {
                   <CardDoctor
                     id= {"1"}
                     profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                    name= {"Drg. Alex"}
+                    name= {"drg. Alex"}
                     address= {"Jl. Kenangan, Denpasar, Bali"}
+                    rate= {"5.0"}
                   />
                   <CardDoctor
-                    id= {"1"}
-                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                    name= {"Drg. Alex"}
-                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                    id= {"2"}
+                    profile= {"http://assets.kompasiana.com/items/album/2022/01/17/dokter-61e5974080a65a632a030c09.jpg"}
+                    name= {"drg. Yenny Hartanti"}
+                    address= {"Jl. Gatot Kaca, Denpasar, Bali"}
+                    rate= {"5.0"}
                   />
                   <CardDoctor
-                    id= {"1"}
-                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                    name= {"Drg. Alex"}
-                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                    id= {"3"}
+                    profile= {"https://healthcareevolutions.com.au/wp-content/uploads/2019/11/home-1-550H.jpg"}
+                    name= {"drg. Annisa Handayani"}
+                    address= {"Jl. Sandat, Denpasar, Bali"}
+                    rate= {"5.0"}
                   />
                   <CardDoctor
-                    id= {"1"}
-                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                    name= {"Drg. Alex"}
-                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                    id= {"4"}
+                    profile= {"https://static.honestdocs.id/system/blog_articles/main_hero_images/000/005/310/original/iStock-913714110_%281%29.jpg"}
+                    name= {"drg. Fariska, Sp.PM"}
+                    address= {"Jl. Gajah Mada, Denpasar, Bali"}
+                    rate= {"4.9"}
                   />
                   <CardDoctor
-                    id= {"1"}
-                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                    name= {"Drg. Alex"}
-                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                    id= {"5"}
+                    profile= {"https://img.okezone.com/content/2022/05/24/65/2599329/studi-jenjang-pendidikan-dokter-sampai-jadi-profesor-makan-waktu-berapa-lama-1NDnWT2wUd.jpg"}
+                    name= {"drg. Jennifer, Sp.Ort"}
+                    address= {"Jl. Wagimin, Denpasar, Bali"}
+                    rate= {"4.9"}
                   />
                   <CardDoctor
-                    id= {"1"}
-                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                    name= {"Drg. Alex"}
-                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                    id= {"6"}
+                    profile= {"https://orlandohandsurgery.com/wp-content/uploads/2016/01/docGWhite_website-1.png"}
+                    name= {"drg. Shubert, Sp.KGA"}
+                    address= {"Jl. Mawar, Denpasar, Bali"}
+                    rate= {"4.8"}
                   />
                   <CardDoctor
-                    id= {"1"}
-                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                    name= {"Drg. Alex"}
-                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                    id= {"7"}
+                    profile= {"https://orlandohandsurgery.com/wp-content/uploads/2016/01/DrBrianWhite_website-1024x748-white-bkgd-670x500-1-e1552586868880.jpg"}
+                    name= {"drg. Pramudianto"}
+                    address= {"Jl. Akasia, Denpasar, Bali"}
+                    rate= {"4.7"}
                   />
                   <CardDoctor
-                    id= {"1"}
-                    profile= {"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxqeT3EgjGLrIn1ZUepCKpPui0ea5I6RcxQ&usqp=CAU"}
-                    name= {"Drg. Alex"}
-                    address= {"Jl. Kenangan, Denpasar, Bali"}
+                    id= {"8"}
+                    profile= {"https://tvline.com/wp-content/uploads/2020/08/the-doctors.jpg?w=620"}
+                    name= {"drg. Harris, Sp.KG"}
+                    address= {"Jl. Harmoni, Denpasar, Bali"}
+                    rate= {"4.7"}
                   />
                 </div>
               </div>

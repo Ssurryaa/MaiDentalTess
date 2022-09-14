@@ -4,6 +4,7 @@ import Glass from '../assets/images/glass.png'; // sumber: https://iconscout.com
 import ScrollTrigger from 'react-scroll-trigger';
 import { useState } from 'react';
 import Footer from '../components/Footer';
+import { Link } from "react-router-dom";
 
 const SistemPakar= () => {
     const [counterOn, setCounterOn] = useState(false);
@@ -176,13 +177,94 @@ const SistemPakar= () => {
                                             </table>
                                         </div>
                                         <div className='flex justify-center'>
-                                            <button href='#' className="py-3 px-12 mt-6 bg-gradient-to-b from-lightblue to-darkblue flex rounded-full justify-center text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
-                                                Submit
-                                            </button>
+                                            <label htmlFor="hasil">
+                                                <p className="py-3 px-12 mt-6 bg-gradient-to-b from-lightblue to-darkblue flex rounded-full justify-center text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+                                                    Submit
+                                                </p>
+                                            </label>
                                         </div>
                                     </form>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Modal Hasil */}
+                <input type="checkbox" id="hasil" className="modal-toggle" />
+                <div className="modal">
+                    <div className="modal-box w-11/12 lg:w-8/12 lg:pl-12 max-w-5xl bg-white">
+                        <div className="w-full rounded-tl-3xl rounded-br-3xl bg-darkblue py-3">
+                            <h1 className='text-white font-semibold text-xl ml-3'>Hasil Diagnosis Penyakit Gigi</h1>
+                        </div>
+                        <div className='flex flex-wrap pt-4 text-black'>
+                            <div className='w-1/6 mt-2'>
+                                <p className='text-start'>Nama</p>
+                            </div>
+                            <div className='w-auto pr-3 mt-2'>
+                                <p className='px-2'>:</p>
+                            </div>
+                            <div className='w-4/6 mt-2'>
+                                <p className='text-start'>Alex</p>
+                            </div>
+                            <div className='w-1/6 mt-2'>
+                                <p className='text-start'>Alamat</p>
+                            </div>
+                            <div className='w-auto pr-3 mt-2'>
+                                <p className='px-2'>:</p>
+                            </div>
+                            <div className='w-4/6 mt-2'>
+                                <p className='text-start'>Denpasar, Bali</p>
+                            </div>
+                            <div className='w-1/6 mt-2'>
+                                <p className='text-start'>Tanggal</p>
+                            </div>
+                            <div className='w-auto pr-3 mt-2'>
+                                <p className='px-2'>:</p>
+                            </div>
+                            <div className='w-4/6 mt-2'>
+                                <p className='text-start'>12 September 2022</p>
+                            </div>
+                        </div>
+                        <h1 className='text-left text-black text-base font-semibold mt-4'>Gejala yang dirasakan</h1>
+                        <li className='text-left text-black mt-2'>Nyeri saat mengunyah</li>
+                        <li className='text-left text-black mt-2'>Gusi berdarah</li>
+                        <h1 className='text-left text-black text-base font-semibold mt-4'>Anda kemungkinan besar terkena penyakit <strong className='font-bold'>Periodontitis</strong></h1>
+                        <div className='flex flex-wrap text-black'>
+                            <div className='w-1/6 mt-2'>
+                                <p className='text-start'>Definisi</p>
+                            </div>
+                            <div className='w-auto pr-3 mt-2'>
+                                <p className='px-2'>:</p>
+                            </div>
+                            <div className='w-4/6 mt-2'>
+                                <p className='text-start'>Periodontitis merupakan salah satu komplikasi dari radang gusi (gingivitis) yang tidak terobati. Jika kondisi ini terjadi dalam jangka panjang, jaringan di sekitar gusi dan gigi akan rusak sehingga menyebabkan gigi tanggal. Pada kasus yang parah, periodontitis dapat menyebabkan kemunculan abses atau kumpulan nanah di gigi.</p>
+                            </div>
+                            <div className='w-1/6 mt-2'>
+                                <p className='text-start'>Penyebab</p>
+                            </div>
+                            <div className='w-auto pr-3 mt-2'>
+                                <p className='px-2'>:</p>
+                            </div>
+                            <div className='w-4/6 mt-2'>
+                                <p className='text-start'>Periodontitis bermula dari penumpukan plak di gigi. Plak ini terbentuk akibat interaksi sisa-sisa makanan dengan bakteri yang normalnya hidup di mulut. Jika tidak dibersihkan, plak tersebut akan mengeras dan membentuk karang gigi yang menjadi media bakteri berkembang biak.</p>
+                            </div>
+                            <div className='w-1/6 mt-2'>
+                                <p className='text-start'>Solusi</p>
+                            </div>
+                            <div className='w-auto pr-3 mt-2'>
+                                <p className='px-2'>:</p>
+                            </div>
+                            <div className='w-4/6 mt-2'>
+                                <p className='text-start'>Scaling, untuk menghilangkan karang gigi dan bakteri dari permukaan gigi atau bagian bawah gusi Root planing, untuk membersihkan dan mencegah penumpukan bakteri dan karang gigi lebih lanjut, serta untuk menghaluskan permukaan akar Pemberian antibiotik oral, obat kumur atau gel, untuk menghilangkan bakteri penyebab infeksi</p>
+                            </div>
+                        </div>
+                        <div className="modal-action flex justify-start">
+                            <Link to="/cari-dokter"
+                                className="rounded-full py-3 px-6 text-base font-semibold text-white bg-gradient-to-b from-lightblue to-darkblue transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 hover:opacity-80 active:bg-darkblue active:text-white hover:shadow-lg">
+                                Tanya Dokter
+                            </Link>
+                            <label htmlFor="hasil" className="rounded-full py-3 px-6 text-base font-semibold text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 hover:opacity-80 active:bg-darkblue active:text-white hover:shadow-lg">Selesai</label>
                         </div>
                     </div>
                 </div>

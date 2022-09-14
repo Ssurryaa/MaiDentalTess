@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 
-const CardDoctor = ({id, profile, name, address}) => {
+const CardDoctor = ({id, profile, name, rate, alumnus}) => {
     return (
       <div className='mx-auto'>
         <div className="card card-compact w-56 bg-white shadow-sm mb-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 hover:shadow-lg">
@@ -17,7 +17,7 @@ const CardDoctor = ({id, profile, name, address}) => {
               </svg>
           </span>
           <span className='absolute left-1 mt-9 z-10'>
-            <p className="font-semibold text-white text-sm"><FontAwesomeIcon icon={solid('star')} />5.0</p>
+            <p className="font-semibold text-white text-sm"><FontAwesomeIcon icon={solid('star')} />{rate}</p>
           </span>
           <div className="avatar justify-center py-4 pt-6">
             <div className="w-24 lg:w-28 rounded-full ring ring-white shadow-lg shadow-sky-400/30">
@@ -41,7 +41,7 @@ const CardDoctor = ({id, profile, name, address}) => {
               </svg>
             </div>
             <p className="text-sm px-2">
-              Alumnus Universitas Pembangunan Nasional "Veteran" Jakarta, 2017
+              {alumnus}
             </p>
           </div>
           <div className='flex flex-wrap justify-center pb-6'>
