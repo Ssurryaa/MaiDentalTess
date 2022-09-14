@@ -27,13 +27,13 @@ html {
 }
 
 .heroBG {
-  height: 100vh;
+  height: auto;
   background: url("./assets/images/bg/Hero.png");
   background-size: cover;
 }
 
 .dokterBG {
-  height: 100vh;
+  height: auto;
   background: url("./assets/images/bg/CariDokter.png");
   background-size: cover;
 }

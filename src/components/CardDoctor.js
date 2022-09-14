@@ -4,49 +4,45 @@ import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 const CardDoctor = ({id, profile, name, address}) => {
     return (
       <div className='mx-auto'>
-          <div className="card card-compact w-44 lg:w-56 bg-white shadow-sm mb-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 hover:shadow-lg">
-            <label htmlFor="detail">
-              <span className='absolute left-0 mt-8 z-10'>
-                <svg width="52" height="29" viewBox="0 0 52 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M49.0093 0H2C0.895431 0 0 0.89543 0 2V27C0 28.1046 0.89543 29 2 29H49.0093C50.5548 29 51.5163 27.3218 50.7347 25.9886L44.5929 15.5114C44.2268 14.8868 44.2268 14.1131 44.5929 13.4886L50.7347 3.01144C51.5163 1.67815 50.5548 0 49.0093 0Z" fill="url(#paint0_linear_175_1601)"/>
-                  <defs>
-                    <linearGradient id="paint0_linear_175_1601" x1="26.25" y1="0" x2="26.25" y2="29" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#85D9F8"/>
-                      <stop offset="1" stop-color="#10B2F4"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </span>
-              <span className='absolute left-1 mt-9 z-10'>
-                <p className="font-semibold text-white text-sm"><FontAwesomeIcon icon={solid('star')} />5.0</p>
-              </span>
-              <div className="avatar justify-center py-4 pt-8">
-                <div className="w-24 lg:w-28 rounded-full ring ring-white shadow-lg shadow-sky-400/30">
-                    <img src={profile} alt="doctor-image"/>
-                </div>
+        <div className="card card-compact w-44 lg:w-56 bg-white shadow-sm mb-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 hover:shadow-lg">
+          <label htmlFor="detail">
+            <span className='absolute left-0 mt-8 z-10'>
+              <svg width="52" height="29" viewBox="0 0 52 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M49.0093 0H2C0.895431 0 0 0.89543 0 2V27C0 28.1046 0.89543 29 2 29H49.0093C50.5548 29 51.5163 27.3218 50.7347 25.9886L44.5929 15.5114C44.2268 14.8868 44.2268 14.1131 44.5929 13.4886L50.7347 3.01144C51.5163 1.67815 50.5548 0 49.0093 0Z" fill="url(#paint0_linear_175_1601)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_175_1601" x1="26.25" y1="0" x2="26.25" y2="29" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#85D9F8"/>
+                    <stop offset="1" stop-color="#10B2F4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span className='absolute left-1 mt-9 z-10'>
+              <p className="font-semibold text-white text-sm"><FontAwesomeIcon icon={solid('star')} />5.0</p>
+            </span>
+            <div className="avatar justify-center py-4 pt-8">
+              <div className="w-24 lg:w-28 rounded-full ring ring-white shadow-lg shadow-sky-400/30">
+                <img src={profile} alt="doctor-image"/>
               </div>
-              <div className="text-center pb-4 lg:pb-8">
-                <h1 className="text-xl text-black font-semibold px-2">
-                  {name}
-                </h1>
-                <p className="text-sm pt-2 px-2">
-                  {address}
+            </div>
+            <div className="text-center pb-4 lg:pb-8">
+              <h1 className="text-xl text-black font-semibold px-2">{name}</h1>
+              <p className="text-sm pt-2 px-2">{address}</p>
+            </div>
+            <div class="grid grid-cols-2 divide-x-2 divide-white">        
+              <label htmlFor="jadwal" className="flex flex-row justify-center py-2 bg-sky-200 hover:bg-sky-100 text-sm text-slate-700">
+                <p>
+                  <FontAwesomeIcon className='mr-1' icon={regular('calendar')} />Jadwal
                 </p>
-              </div>
-              <div class="grid grid-cols-2 divide-x-2 divide-white">        
-                <label htmlFor="jadwal" className="flex flex-row justify-center py-2 bg-sky-200 hover:bg-sky-100 text-sm text-slate-700">
-                  <p>
-                    <FontAwesomeIcon className='mr-1' icon={regular('calendar')} />Jadwal
-                  </p>
-                </label>
-                <label htmlFor="chat" className="flex flex-row justify-center py-2 bg-sky-200 hover:bg-sky-100 text-sm text-slate-700">
-                  <p>
-                    <FontAwesomeIcon className='mr-1' icon={regular('envelope')} />Chat
-                  </p>
-                </label>
-              </div>
-            </label>
-          </div>
+              </label>
+              <label htmlFor="chat" className="flex flex-row justify-center py-2 bg-sky-200 hover:bg-sky-100 text-sm text-slate-700">
+                <p>
+                  <FontAwesomeIcon className='mr-1' icon={regular('envelope')} />Chat
+                </p>
+              </label>
+            </div>
+          </label>
+        </div>
 
         {/* Modal Jadwal */}
         <input type="checkbox" id="jadwal" className="modal-toggle" />
@@ -82,7 +78,7 @@ const CardDoctor = ({id, profile, name, address}) => {
           </label>
         </label>
 
-        {/* Modal Jadwal */}
+        {/* Modal Chat */}
         <input type="checkbox" id="chat" className="modal-toggle" />
         <label htmlFor="chat" className="modal cursor-pointer">
           <label className="modal-box relative bg-sky-50 lg:w-1/4 max-w-5xl px-0 py-0" for="">
@@ -93,15 +89,13 @@ const CardDoctor = ({id, profile, name, address}) => {
               </div>
               <h1 className='text-white font-semibold text-xl ml-3 self-center'>Drg. Dewi</h1>
             </div>
-            <div className='py-44'>
-
-            </div>
-                <form>
-                  <div className='form-control w-full flex'>
-                      <textarea  class="input bg-white bg-opacity-50 pr-16 w-full" placeholder="Ketik pesan disini..." required/>
-                      <button type="submit" class="absolute right-2 lg:right-2.5 mt-1 px-2.5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl"><FontAwesomeIcon className='pr-1 h-4' icon={regular('paper-plane')} /></button>
-                  </div>
-                </form>
+            <div className='py-44'></div>
+            <form>
+              <div className='form-control w-full flex'>
+                <textarea  class="input bg-white bg-opacity-50 pr-16 w-full" placeholder="Ketik pesan disini..." required/>
+                <button type="submit" class="absolute right-2 lg:right-2.5 mt-1 px-2.5 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl"><FontAwesomeIcon className='pr-1 h-4' icon={regular('paper-plane')} /></button>
+              </div>
+            </form>
           </label>
         </label>
 

@@ -1,4 +1,4 @@
-import Doctor from '../assets/images/Doctor4.png';
+import Doctor from '../assets/images/Doctor4.png';  // sumber: https://www.istockphoto.com/
 import Google from '../assets/images/google.svg';
 import Facebook from '../assets/images/Facebook.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

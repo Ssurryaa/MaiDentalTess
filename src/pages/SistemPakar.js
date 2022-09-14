@@ -1,6 +1,6 @@
-import Teeth from '../assets/images/teeth.png';
+import Teeth from '../assets/images/teeth.png'; // sumber: https://iconscout.com/
 import BGTeeth from '../assets/images/bgteeth.png';
-import Glass from '../assets/images/glass.png';
+import Glass from '../assets/images/glass.png'; // sumber: https://iconscout.com/
 import ScrollTrigger from 'react-scroll-trigger';
 import { useState } from 'react';
 import Footer from '../components/Footer';
@@ -11,41 +11,40 @@ const SistemPakar= () => {
     return(
         <div>
             <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            <section id="sistem-pakar" className="pt-6 lg:pt-20 px-4 lg:px-20 heroBG">
-                <div className="container">
-                    <div className="w-full flex flex-wrap">
-                        <div className="w-full lg:w-1/2 self-start mt-20">
-                            <h1 className="text-start font-semibold text-darkblue lg:text-lg">-Sistem Pakar Penyakit Gigi.</h1>
-                            <h1 className="text-start text-4xl lg:text-6xl font-bold text-black mt-1">Diagnosa</h1>
-                            <div className='flex flex-wrap mt-1 lg:mt-4'>
-                                <h1 className="text-start text-4xl lg:text-6xl font-bold text-darkblue underline transition duration-300 ease-in-out hover:text-lightblue mr-2 lg:mr-4">Gigimu</h1>
-                                <h1 className="text-start text-4xl lg:text-6xl font-bold text-black">Sekarang!</h1>
-                            </div>
-                            <p className="text-start mt-6 lg:mt-8 text-md">Sistem Pakar adalah sistem informasi yang berisi pengetahuan seorang pakar sehingga dapat digunakan untuk konsultasi. Website Mai Dental merupakan website berbasis Sistem Pakar yang menggunakan algoritma Certainty Factor.</p>
-                            { counterOn && 
-                                <div className="flex justify-start animate__animated animate__fadeInUp">
-                                    <a href="#diagnosa" className="py-3 px-6 mt-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
-                                        Mulai Analisis
-                                    </a>
+                <section id="sistem-pakar" className="pt-6 lg:pt-20 px-4 lg:px-20 heroBG">
+                    <div className="container">
+                        <div className="w-full flex flex-wrap">
+                            <div className="w-full lg:w-1/2 self-start mt-20">
+                                <h1 className="text-start font-semibold text-darkblue lg:text-lg">-Sistem Pakar Penyakit Gigi.</h1>
+                                <h1 className="text-start text-4xl lg:text-6xl font-bold text-black mt-1">Diagnosa</h1>
+                                <div className='flex flex-wrap mt-1 lg:mt-4'>
+                                    <h1 className="text-start text-4xl lg:text-6xl font-bold text-darkblue underline transition duration-300 ease-in-out hover:text-lightblue mr-2 lg:mr-4">Gigimu</h1>
+                                    <h1 className="text-start text-4xl lg:text-6xl font-bold text-black">Sekarang!</h1>
                                 </div>
-                            }
-                        </div>
-                        <div className="w-full lg:w-1/2 mt-6 lg:mt-4 ">
-                            { counterOn &&
-                                <div className="absolute -right-0 lg:right-28 top-96 lg:top-16 z-20 animate__animated animate__fadeInUp">
-                                    <img src={Glass} alt="Glass" className='scale-50 lg:scale-75'/>
-                                </div>
-                            }
-                            <div data-aos="fade-up" className='relative z-10 img-hero aos-init aos-animate'>
-                                <img src={Teeth} alt="HeroImage" className='absolute scale-70 lg:scale-150 right-16 lg:right-44 lg:mt-28'/>
+                                <p className="text-start mt-6 lg:mt-8 text-md">Sistem Pakar adalah sistem informasi yang berisi pengetahuan seorang pakar sehingga dapat digunakan untuk konsultasi. Website Mai Dental merupakan website berbasis Sistem Pakar yang menggunakan algoritma Certainty Factor.</p>
+                                { counterOn && 
+                                    <div className="flex justify-start animate__animated animate__fadeInUp">
+                                        <a href="#diagnosa" className="py-3 px-6 mt-6 bg-gradient-to-b from-lightblue to-darkblue rounded-full text-white font-semibold transition duration-300 ease-in-out hover:opacity-80 hover:shadow-xl active:bg-darkblue">
+                                            Mulai Analisis
+                                        </a>
+                                    </div>
+                                }
                             </div>
-                            <img data-aos="fade-up" src={BGTeeth} alt="BGTeeth" className='mx-auto lg:mt-12 aos-init aos-animate'/>
+                            <div className="w-full lg:w-1/2 mt-6 lg:mt-4 ">
+                                { counterOn &&
+                                    <div className="absolute -right-0 lg:right-28 top-96 lg:top-16 z-20 animate__animated animate__fadeInUp">
+                                        <img src={Glass} alt="Glass" className='scale-50 lg:scale-75'/>
+                                    </div>
+                                }
+                                <div className='relative z-10 img-hero'>
+                                    <img src={Teeth} alt="HeroImage" className='absolute scale-70 lg:scale-150 right-16 lg:right-44 lg:mt-28'/>
+                                </div>
+                                <img src={BGTeeth} alt="BGTeeth" className='mx-auto lg:mt-12'/>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
             </ScrollTrigger>
-
             <section id="diagnosa" className="pt-20 px-4 pb-16 lg:pt-20 lg:px-20 bg-background">
                 <div className='relative w-full blur-xxl'>
                     <span className='absolute right-0'>
@@ -133,37 +132,43 @@ const SistemPakar= () => {
                                                 <tbody>
                                                 <tr>
                                                     <td className='bg-white'>1</td>
-                                                    <td className='bg-white'>Apakah kamu merasakan nyeri pada gigi?</td>
+                                                    <td className='bg-white'>Apakah kamu mengalami nyeri saat mengunyah?</td>
                                                     <td className='text-center bg-white'>
-                                                        <select className="select select-info lg:w-3/5 mx-2 bg-white">
+                                                        <select className="select select-info lg:w-4/6 mx-2 bg-white">
                                                             <option disabled selected>Pilih jawaban</option>
-                                                            <option>Ya</option>
-                                                            <option>Japanese</option>
-                                                            <option>Italian</option>
+                                                            <option>Tidak Tahu</option>
+                                                            <option>Mungkin</option>
+                                                            <option>Kemungkinan besar</option>
+                                                            <option>Hampir Pasti</option>
+                                                            <option>Pasti</option>
                                                         </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td className='bg-white'>1</td>
-                                                    <td className='bg-white'>Apakah kamu merasakan nyeri pada gigi?</td>
+                                                    <td className='bg-white'>2</td>
+                                                    <td className='bg-white'>Apakah kamu mengalami gusi berdarah?</td>
                                                     <td className='text-center bg-white'>
-                                                        <select className="select select-info lg:w-3/5 mx-2 bg-white">
+                                                        <select className="select select-info lg:w-4/6 mx-2 bg-white">
                                                             <option disabled selected>Pilih jawaban</option>
-                                                            <option>Ya</option>
-                                                            <option>Japanese</option>
-                                                            <option>Italian</option>
+                                                            <option>Tidak Tahu</option>
+                                                            <option>Mungkin</option>
+                                                            <option>Kemungkinan besar</option>
+                                                            <option>Hampir Pasti</option>
+                                                            <option>Pasti</option>
                                                         </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td className='bg-white'>1</td>
-                                                    <td className='bg-white'>Apakah kamu merasakan nyeri pada gigi?</td>
+                                                    <td className='bg-white'>3</td>
+                                                    <td className='bg-white'>Apakah kamu mengalami gusi bengkak?</td>
                                                     <td className='text-center bg-white'>
-                                                        <select className="select select-info lg:w-3/5 mx-2 bg-white">
+                                                        <select className="select select-info lg:w-4/6 mx-2 bg-white">
                                                             <option disabled selected>Pilih jawaban</option>
-                                                            <option>Ya</option>
-                                                            <option>Japanese</option>
-                                                            <option>Italian</option>
+                                                            <option>Tidak Tahu</option>
+                                                            <option>Mungkin</option>
+                                                            <option>Kemungkinan besar</option>
+                                                            <option>Hampir Pasti</option>
+                                                            <option>Pasti</option>
                                                         </select>
                                                     </td>
                                                 </tr>

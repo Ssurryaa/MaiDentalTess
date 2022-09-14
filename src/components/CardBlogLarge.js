@@ -5,9 +5,7 @@ const CardBlogLarge = ({slug, image, title, author, artikel}) => {
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/4">
               <div className="h-44 lg:w-56 lg:h-52 mask-square ring-white">
-              <img 
-                src={image}
-                alt="image" />
+                <img src={image} alt="image" />
               </div>
             </div>
             <div className="w-full lg:w-3/4 px-4 pt-2">
@@ -15,9 +13,9 @@ const CardBlogLarge = ({slug, image, title, author, artikel}) => {
                 <h2 className="text-black text-left text-2xl font-semibold">{title.substring(0, 60)}</h2>
                 <p className='text-left'>Oleh {author}</p>
                 <p className='text-left'>{artikel.substring(0, 220)}...</p>
-              <div className="card-actions ">
-                <a href='/detail-blog' className="text-base font-semibold text-sky-500 hover:text-sky-300">Selengkapnya</a>
-              </div>
+                <div className="card-actions ">
+                  <a href='/detail-blog' className="text-base font-semibold text-sky-500 hover:text-sky-300">Selengkapnya</a>
+                </div>
               </div>
             </div>
           </div>

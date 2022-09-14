@@ -1,4 +1,4 @@
-import Doctor from '../assets/images/Doctor5.png';
+import Doctor from '../assets/images/Doctor5.png';  // sumber: https://www.istockphoto.com/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 import React, { useState } from 'react';

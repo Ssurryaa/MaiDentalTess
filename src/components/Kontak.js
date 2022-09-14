@@ -1,4 +1,3 @@
-import Button from '../components/Button';
 import Kontak from '../assets/images/kontakImage.png';
 import Torus from '../assets/images/Torus2.png';
 
@@ -9,12 +8,12 @@ const About = () =>{
             <span className='absolute left-0'>
               <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="127" cy="127" r="127" fill="url(#paint0_linear_172_1152)"/>
-                  <defs>
-                    <linearGradient id="paint0_linear_172_1152" x1="127" y1="0" x2="127" y2="254" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#85D9F8"/>
-                      <stop offset="1" stop-color="#10B2F4"/>
-                    </linearGradient>
-                  </defs>
+                <defs>
+                  <linearGradient id="paint0_linear_172_1152" x1="127" y1="0" x2="127" y2="254" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#85D9F8"/>
+                    <stop offset="1" stop-color="#10B2F4"/>
+                  </linearGradient>
+                </defs>
               </svg>
             </span>
           </div>
