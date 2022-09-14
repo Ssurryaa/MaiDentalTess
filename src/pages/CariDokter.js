@@ -95,7 +95,7 @@ const CariDokter = () => {
                     id= {"3"}
                     profile= {"https://healthcareevolutions.com.au/wp-content/uploads/2019/11/home-1-550H.jpg"}
                     name= {"drg. Annisa"}
-                    address= {"Jl. Sandat, Denpasar, Bali"}
+                    address= {"Jl. Sandat Sari, Denpasar, Bali"}
                     rate= {"5.0"}
                   />
                   <CardDoctor
@@ -116,14 +116,14 @@ const CariDokter = () => {
                     id= {"6"}
                     profile= {"https://orlandohandsurgery.com/wp-content/uploads/2016/01/docGWhite_website-1.png"}
                     name= {"drg. Shubert"}
-                    address= {"Jl. Mawar, Denpasar, Bali"}
+                    address= {"Jl. Mawar Melati, Denpasar, Bali"}
                     rate= {"4.8"}
                   />
                   <CardDoctor
                     id= {"7"}
                     profile= {"https://orlandohandsurgery.com/wp-content/uploads/2016/01/DrBrianWhite_website-1024x748-white-bkgd-670x500-1-e1552586868880.jpg"}
                     name= {"drg. Pramudianto"}
-                    address= {"Jl. Akasia, Denpasar, Bali"}
+                    address= {"Jl. Akasia Jaya, Denpasar, Bali"}
                     rate= {"4.7"}
                   />
                   <CardDoctor
