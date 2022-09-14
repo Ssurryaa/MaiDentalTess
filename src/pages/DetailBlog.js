@@ -50,12 +50,12 @@ const DetailBlog = () => {
                                                 </svg>
                                             </a>
                                             <ul className="p-2 bg-white text-black">
-                                                <li>
-                                                    <a>Gigi</a>
-                                                </li>
-                                                <li>
-                                                    <a>Submenu 2</a>
-                                                </li>
+                                            <li>
+                                                <a>Gigi</a>
+                                            </li>
+                                            <li>
+                                                <a>Submenu 2</a>
+                                            </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -73,7 +73,7 @@ const DetailBlog = () => {
                             <div className="card mx-auto w-11/12 bg-white shadow-xl mt-72 lg:px-8">
                                 <div className="card-body">
                                     <div className="flex flex-wrap">
-                                        <div className="w-4/6">
+                                        <div className="w-full">
                                             <div className="text-sm breadcrumbs mt-4">
                                                 <ul>
                                                     <li><a>Blog</a></li> 
@@ -85,13 +85,6 @@ const DetailBlog = () => {
                                             <p className='text-left text-slate-500 mt-4 pb-8'>Dalam situasi saat ini, menjaga kebersihan pribadi sangatlah penting. Pastinya sekarang, kamu sudah terbiasa mengenakan masker dan mencuci tangan dengan seksama. Tapi jangan lupakan pentingnya menjaga kebersihan gigi dan mulut juga, lho. Berikut adalah beberapa tips tentang cara menjaga kesehatan gigi dan mulut.
                 MENGAPA KEBERSIHAN GIGI DAN MULUT ITU PENTING?
                 Mulut kita adalah titik masuk ke saluran pencernaan dan pernapasan. Mulut juga merupakan rumah bagi setidaknya 700 spesies mikroba. Ini termasuk bakteri baik dan jahat. Menyikat gigi dan flossing secara teratur dapat membantu menjaga kebersihan gigi dan mulut. Namun, tanpa kebersihan gigi dan mulut yang baik, bakteri jahat dapat menyebabkan infeksi, seperti kerusakan gigi dan penyakit gusi. Jika tidak diobati, penyakit ini dapat mempengaruhi kesehatanmu secara keseluruhan.</p>
-                                        </div>
-                                        <div className="w-2/6 mt-20 px-12">
-                                            <h1 className="text-left text-black text-xl font-semibold">Artikel Terkait</h1>
-                                            <ul className="grid justify-items-stretch">
-                                                <li><a className="link link-hover justify-self-start">Blog</a></li> 
-                                                <li><a className="link link-hover">Kesehatan</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>

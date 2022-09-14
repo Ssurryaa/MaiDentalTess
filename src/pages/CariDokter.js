@@ -87,35 +87,35 @@ const CariDokter = () => {
                   <CardDoctor
                     id= {"2"}
                     profile= {"http://assets.kompasiana.com/items/album/2022/01/17/dokter-61e5974080a65a632a030c09.jpg"}
-                    name= {"drg. Yenny Hartanti"}
+                    name= {"drg. Yenny"}
                     address= {"Jl. Gatot Kaca, Denpasar, Bali"}
                     rate= {"5.0"}
                   />
                   <CardDoctor
                     id= {"3"}
                     profile= {"https://healthcareevolutions.com.au/wp-content/uploads/2019/11/home-1-550H.jpg"}
-                    name= {"drg. Annisa Handayani"}
+                    name= {"drg. Annisa"}
                     address= {"Jl. Sandat, Denpasar, Bali"}
                     rate= {"5.0"}
                   />
                   <CardDoctor
                     id= {"4"}
                     profile= {"https://static.honestdocs.id/system/blog_articles/main_hero_images/000/005/310/original/iStock-913714110_%281%29.jpg"}
-                    name= {"drg. Fariska, Sp.PM"}
+                    name= {"drg. Fariska"}
                     address= {"Jl. Gajah Mada, Denpasar, Bali"}
                     rate= {"4.9"}
                   />
                   <CardDoctor
                     id= {"5"}
                     profile= {"https://img.okezone.com/content/2022/05/24/65/2599329/studi-jenjang-pendidikan-dokter-sampai-jadi-profesor-makan-waktu-berapa-lama-1NDnWT2wUd.jpg"}
-                    name= {"drg. Jennifer, Sp.Ort"}
+                    name= {"drg. Jennifer"}
                     address= {"Jl. Wagimin, Denpasar, Bali"}
                     rate= {"4.9"}
                   />
                   <CardDoctor
                     id= {"6"}
                     profile= {"https://orlandohandsurgery.com/wp-content/uploads/2016/01/docGWhite_website-1.png"}
-                    name= {"drg. Shubert, Sp.KGA"}
+                    name= {"drg. Shubert"}
                     address= {"Jl. Mawar, Denpasar, Bali"}
                     rate= {"4.8"}
                   />
@@ -129,7 +129,7 @@ const CariDokter = () => {
                   <CardDoctor
                     id= {"8"}
                     profile= {"https://tvline.com/wp-content/uploads/2020/08/the-doctors.jpg?w=620"}
-                    name= {"drg. Harris, Sp.KG"}
+                    name= {"drg. Harris"}
                     address= {"Jl. Harmoni, Denpasar, Bali"}
                     rate= {"4.7"}
                   />
