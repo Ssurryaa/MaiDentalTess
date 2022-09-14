@@ -21,7 +21,7 @@ const Blog = () =>{
               <div className='w-full lg:w-1/2 text-start'>
                 <h1 data-aos="fade-up" className="font-semibold text-darkblue lg:text-lg aos-init aos-animate">-Artikel.</h1>
                 <h1 data-aos="fade-up" className="text-4xl lg:text-5xl font-bold text-black mr-2 lg:mr-4 aos-init aos-animate">Temukan Hal Menarik Seputar Gigi</h1>
-                <div data-aos="fade-up-right" className='aos-init aos-animate'>
+                <div data-aos="fade-up" className='aos-init aos-animate'>
                   <div className="w-11/12 lg:w-96 mt-8 mx-auto rounded-tl-3xl rounded-br-3xl bg-white bg-opacity-50 shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 hover:shadow-lg">
                     <div className="w-full h-56 mask-square rounded-tl-3xl rounded-br-3xl ring-white">
                       <img src="https://placeimg.com/400/300/arch" alt="BlogImage" />
@@ -47,7 +47,7 @@ const Blog = () =>{
                 </div>
               </div>
               <div className='w-full lg:w-1/2 lg:px-24'>
-                <div data-aos="fade-up-left" className='aos-init aos-animate'>
+                <div data-aos="fade-up" className='aos-init aos-animate'>
                   <div className="w-11/12 lg:w-96 mt-8 mx-auto rounded-tl-3xl rounded-br-3xl bg-white bg-opacity-50 shadow-sm transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 hover:shadow-lg">
                     <div className="w-full h-56 mask-square rounded-tl-3xl rounded-br-3xl ring-white">
                       <img src="https://placeimg.com/400/300/arch" alt="BlogImage" />
@@ -56,16 +56,16 @@ const Blog = () =>{
                       <p className='pt-2 text-base text-black'>2 Oktober 2022</p>
                       <h2 className="text-3xl font-semibold text-black">Cara Menjaga Kesehatan Gigi</h2>
                       <div className='mx-auto py-3'>
-                      <svg width="118" height="2" viewBox="0 0 118 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="118" height="2" fill="url(#paint0_linear_414_494)"/>
-                        <defs>
-                          <linearGradient id="paint0_linear_414_494" x1="116" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#D3D3D3" stop-opacity="0"/>
-                            <stop offset="0.501157" stop-color="#D3D3D3"/>
-                            <stop offset="1" stop-color="#D3D3D3" stop-opacity="0"/>
-                          </linearGradient>
-                        </defs>
-                      </svg>
+                        <svg width="118" height="2" viewBox="0 0 118 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="118" height="2" fill="url(#paint0_linear_414_494)"/>
+                          <defs>
+                            <linearGradient id="paint0_linear_414_494" x1="116" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#D3D3D3" stop-opacity="0"/>
+                              <stop offset="0.501157" stop-color="#D3D3D3"/>
+                              <stop offset="1" stop-color="#D3D3D3" stop-opacity="0"/>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                       <p className='pb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cursus enim, bibendum sit faucibus praesent in cras.</p>
                     </div>

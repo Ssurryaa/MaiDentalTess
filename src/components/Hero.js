@@ -30,7 +30,7 @@ const Hero = () =>{
                     </div>
                     <div className="w-full lg:w-1/2 mt-6 lg:mt-4">
                         { counterOn &&
-                            <div className="absolute right-0 lg:right-28 top-96 lg:top-16 z-20 animate__animated animate__fadeInRight">
+                            <div className="absolute right-0 lg:right-28 top-96 lg:top-16 z-20 animate__animated animate__fadeInUp">
                                 <img src={Shield} alt="Shield" className='scale-50 lg:scale-75'/>
                             </div>
                         }

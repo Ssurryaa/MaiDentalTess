@@ -32,7 +32,7 @@ const SistemPakar= () => {
                         </div>
                         <div className="w-full lg:w-1/2 mt-6 lg:mt-4 ">
                             { counterOn &&
-                                <div className="absolute -right-4 lg:right-28 top-96 lg:top-16 z-20 animate__animated animate__fadeInRight">
+                                <div className="absolute -right-0 lg:right-28 top-96 lg:top-16 z-20 animate__animated animate__fadeInUp">
                                     <img src={Glass} alt="Glass" className='scale-50 lg:scale-75'/>
                                 </div>
                             }
@@ -46,7 +46,7 @@ const SistemPakar= () => {
             </section>
             </ScrollTrigger>
 
-            <section id="diagnosa" className="pt-6 px-4 pb-16 lg:pt-20 lg:px-20 bg-background">
+            <section id="diagnosa" className="pt-20 px-4 pb-16 lg:pt-20 lg:px-20 bg-background">
                 <div className='relative w-full blur-xxl'>
                     <span className='absolute right-0'>
                     <svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,9 +61,9 @@ const SistemPakar= () => {
                     </span>
                 </div>
                 <div className="container">
-                    <div data-aos="fade-up" className="w-full flex flex-wrap z-40 aos-init aos-animate">
-                        <div className="w-full lg:w-2/6 px-2 pt-6 lg:pt-0">
-                            <div className="card w-full bg-white bg-opacity-50 z-30 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
+                    <div data-aos="fade-up" className="w-full flex flex-wrap z-50 aos-init aos-animate">
+                        <div className="w-full lg:w-2/6 px-2 pt-6 lg:pt-0 z-50">
+                            <div className="card w-full bg-white bg-opacity-50 z-50 lg:bg-opacity-30 backdrop-blur-xl border border-white shadow-md">
                                 <div className="card-body">
                                     <h1 className="text-center text-2xl text-black font-semibold">
                                         Data Pasien
