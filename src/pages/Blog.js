@@ -93,6 +93,27 @@ const DetailBlog = () => {
                                         author={"Alexandra"} 
                                         artikel={"Dalam situasi saat ini, menjaga kebersihan pribadi sangatlah penting. Pastinya sekarang, kamu sudah terbiasa mengenakan masker dan mencuci tangan dengan seksama. Tapi jangan lupakan pentingnya menjaga kebersihan gigi"}
                                     />
+                                    <CardBlogLarge
+                                        slug={"/detail-blog"} 
+                                        image={"https://res.cloudinary.com/dk0z4ums3/image/upload/v1627270237/attached_image/obat-kumur-sebagai-antiseptik-dalam-menjaga-kesehatan-mulut-0-alodokter.jpg"} 
+                                        title={"Atasi Sariawan dengan Obat Kumur Antiseptik"} 
+                                        author={"Robert"} 
+                                        artikel={"Sariawan merupakan salah satu penyakit peradangan yang paling umum menjangkiti area di sekitar mulut. Berbicara mengenai efeknya, kemunculan sariawan kerap mengganggu aktivitas keseharian penderitanya. Beruntung, mengatasi sariawan biasanya cukup dilakukan dengan obat kumur. Obat kumur untuk sariawan sendiri bisa beraneka macam, namun untuk yang berbahan Povidone-Iodine (PVP-I) dan non alkohol dianggap memiliki keunggulan."}
+                                    />
+                                    <CardBlogLarge
+                                        slug={"/detail-blog"} 
+                                        image={"https://asset.kompas.com/crops/ffw_UVYntoeKBW3VkAF57-q1Ivg=/0x0:8688x5792/750x500/data/photo/2021/05/18/60a30d5f1c583.jpg"} 
+                                        title={"Lakukan Ini untuk Memberantas Karang Gigi"} 
+                                        author={"Sarah"} 
+                                        artikel={"Karang gigi disebabkan karena adanya penumpukan sisa makanan yang dalam jangka waktu yang lama. Biasanya, hal ini banyak ditemukan pada bagian yang tidak terkena sikat gigi saat proses membersihkan gigi. Itulah sebabnya karang gigi sering muncul pada gigi depan yang berada di rahang bawah (sisi bagian dalam) dan gigi geraham rahang atas (sisi bagian luar). Cara paling efektif  untuk menghilangkan karang gigi adalah dengan membersihkan karang gigi atau scaling yang dilakukan oleh dokter gigi. Teknik ini dilakukan dengan menggunakan bantuan alat secara manual atau dengan alat ultrasonik. Penggunaan benang gigi (dental floss) juga dapat membantu membersihkan sisa makanan yang terselip di antara gigi."}
+                                    />
+                                    <CardBlogLarge
+                                        slug={"/detail-blog"} 
+                                        image={"https://awsimages.detik.net.id/community/media/visual/2017/02/28/0a4e2aae-3575-46db-842a-b7629e6b9181_43.jpg?w=700&q=90"} 
+                                        title={"Begini Cara Menjaga Kesehatan Gigi dan Mulut Anak"} 
+                                        author={"Elira"} 
+                                        artikel={"Kebanyakan orang tua mengabaikan kesehatan gigi anak yaitu gigi susu (sulung) karena gigi tersebut akan digantikan oleh gigi permanen. Padahal masalah gigi dan mulut pada anak juga berpengaruh pada tumbuh kembang anak. Contohnya saja, jika gigi susu berlubang dan menyebabkan rasa tidak nyaman atau bahkan sakit pada anak, maka ada kemungkinan nafsu makan anak berkurang sehingga gizi anak tidak terpenuhi. Maka dari itu, kita perlu meningkatkan pencegahan gigi berlubang sejak dini. Beberapa kebiasaan dapat dilakukan orang tua untuk mencegah gigi berlubang dan menjaga gigi tetap sehat adalah melakukan pemeriksaan rutin, menjaga kebersihan gigi, hindari memberi susu bayi ketika tidur, batasi penggunaan botol dot hingga usia 2 atau 3 tahun, dan memperhatikan makanan yang dikonsumsi oleh anak."}
+                                    />
                                 </div>
                             </div>
                             <div className="lg:flex lg:w-1/4 hidden">
@@ -102,9 +123,21 @@ const DetailBlog = () => {
                                     </h1>
                                     <CardBlogSmall
                                         slug={"/detail-blog"} 
-                                        image={"https://images.unsplash.com/photo-1611166819595-ac34987dfa57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=515&q=80"} 
-                                        title={"Cara mudah menjaga kesehatan gigi dan mulut"} 
-                                        author={"Alexandra"}
+                                        image={"https://asset.kompas.com/crops/ffw_UVYntoeKBW3VkAF57-q1Ivg=/0x0:8688x5792/750x500/data/photo/2021/05/18/60a30d5f1c583.jpg"} 
+                                        title={"Lakukan Ini untuk Memberantas Karang Gigi"} 
+                                        author={"Sarah"}
+                                    />
+                                    <CardBlogSmall
+                                        slug={"/detail-blog"} 
+                                        image={"https://awsimages.detik.net.id/community/media/visual/2017/02/28/0a4e2aae-3575-46db-842a-b7629e6b9181_43.jpg?w=700&q=90"} 
+                                        title={"Begini Cara Menjaga Kesehatan Gigi dan Mulut Anak"} 
+                                        author={"Elira"}
+                                    />
+                                    <CardBlogSmall
+                                        slug={"/detail-blog"} 
+                                        image={"https://asset-a.grid.id/crop/0x0:0x0/x/photo/2020/03/13/1013303708.jpg"} 
+                                        title={"Hati-Hati, Makanan dan Minuman Panas Dapat Merusak Gigimu"} 
+                                        author={"Eveland"}
                                     />
                                 </div>
                             </div>
